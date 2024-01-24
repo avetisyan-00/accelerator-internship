@@ -7,20 +7,1486 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship programs</title>
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/manrope-light.woff2" as="font">
+  <link rel="preload" href="fonts/manrope-regular.woff2" as="font">
+  <link rel="preload" href="fonts/manrope-medium.woff2" as="font">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
 </head>
 
 <body>
-  <img src="/__spritemap#sprite-logo" />
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <!-- <img src="/__spritemap#sprite-logo" /> -->
+  <main>
+    <h1 class="visually-hidden">Глобальный профессиональный
+      опыт обучения за рубежом.</h1>
+
+    <section class="slider swiper" data-test="slider">
+      <header class="header" data-header>
+        <div class="header__container container">
+          <div class="header__block">
+            <a class="header__logo logo" href="index.html">
+              <span class="visually-hidden">Логотип</span>
+              <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <use href="__spritemap#sprite-logo"></use>
+              </svg>
+            </a>
+            <div class="header__menu-wrapper">
+              <button class="header__menu" type="button" data-burger>
+                <span class="header__toggle">Меню</span>
+                <span class="header__nav-toggle">
+                  <span></span>
+                </span>
+              </button>
+              <div class="header__wrapper">
+                <nav class="header__nav">
+                  <div class="header__nav-wrapper">
+                    <ul class="header__list">
+                      <li class="header__item">
+                        <a class="header__link" href="#about">
+                          О проекте
+                        </a>
+                      </li>
+                      <li class="header__item">
+                        <a class="header__link" href="#programs">
+                          ПРОГРАММЫ
+                          <ul class="header__list-mini">
+                            <li class="header__item-mini">
+                              <a class="header__link-mini">Стажировки</a>
+                            </li>
+                            <li class="header__item-mini">
+                              <a class="header__link-mini">Волонтёрство</a>
+                            </li>
+                            <li class="header__item-mini">
+                              <a class="header__link-mini">Учёба</a>
+                            </li>
+                            <li class="header__item-mini">
+                              <a class="header__link-mini">Религия</a>
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
+                      <li class="header__item">
+                        <a class="header__link" href="#grant">
+                          КАК ПОЕХАТЬ
+                        </a>
+                      </li>
+                      <li class="header__item">
+                        <a class="header__link" href="#reviews">
+                          ОТЗЫВЫ
+                        </a>
+                      </li>
+                      <li class="header__item">
+                        <a class="header__link" href="#news">
+                          НОВОСТИ
+                        </a>
+                      </li>
+                      <li class="header__item">
+                        <a class="header__link" href="#contacts">
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="slider__wrapper swiper-wrapper">
+        <div class="slider__slide swiper-slide">
+          <div class="slider__background">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/background-mobile.webp 1x, img/background-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/background-tablet.webp 1x, img/background-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/background.webp 1x, img/background@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/background-mobile.png 1x, img/background-mobile@2x.png 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x"> -->
+              <img src="img/background.png" srcset="img/background@2x.png 2x" width="1440" height="800"
+                alt="Самый хороший спортзал!">
+            </picture>
+          </div>
+          <div class="slider__container container">
+            <div class="slider__header">
+              <h2>Глобальный профессиональный
+                опыт обучения за рубежом
+              </h2>
+              <div class="slider__footer">
+                <p>
+                  Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий
+                  студенческий стиль жизни!
+                </p>
+                <a class="slider__button" href="#">подробнее
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="slider__angle">
+                <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__slide swiper-slide">
+          <div class="slider__background">
+            <!-- <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/background-two-mobile.webp 1x, img/background-two-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/background-two-tablet.webp 1x, img/background-two-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/background-two.webp 1x, img/background-two@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
+                  srcset="img/background-two-mobile.png 1x, img/background-two-mobile@2x.png 2x">
+                <source type="image/png" media="(max-width: 1439px)"
+                  srcset="img/background-two-tablet.png 1x, img/background-two-tablet@2x.png 2x"> -->
+            <img src="img/background-two.png" srcset="img/background-two@2x.png 2x" width="1440" height="800"
+              alt="Горы Камчатки!">
+            </picture>
+          </div>
+          <div class="slider__container container">
+            <div class="slider__header">
+              <h2>Волонтёрские программы –
+                внесите свой вклад в общество</h2>
+              <div class="slider__footer">
+                <p>
+                  Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                </p>
+                <a class="slider__button" href="#">подробнее
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__slide swiper-slide">
+          <div class="slider__background">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/background-three-mobile.webp 1x, img/background-three-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/background-three-tablet.webp 1x, img/background-three-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/background-three.webp 1x, img/background-three@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)"
+                    srcset="img/background-three-mobile.png 1x, img/background-three-mobile@2x.png 2x">
+                  <source type="image/png" media="(max-width: 1439px)"
+                    srcset="img/background-three-tablet.png 1x, img/background-three-tablet@2x.png 2x"> -->
+              <img src="img/background-three.png" srcset="img/background-three@2x.png 2x" width="1440" height="800"
+                alt="Магический Алтай!">
+            </picture>
+          </div>
+          <div class="slider__container container">
+            <div class="slider__header">
+              <h2>Программы стажировок
+                в крупнейших компаниях мира</h2>
+              <div class="slider__footer">
+                <p>
+                  Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                </p>
+                <a class="slider__button" href="#">подробнее
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__bullets swiper-pagination">
+      </div>
+    </section>
+
+
+
+    <section class="about" data-test="about">
+      <div class="about__container container">
+        <div class="about__wrapper">
+          <div class="about__block">
+            <h2 class="about__slogan">О проекте
+              «Стажировка»</h2>
+            <p>«Стажировка» — совместный проект
+              правительств и волонтёрских бригад.</p>
+          </div>
+          <div class="about__miniblock">
+            <h3>Наша цель</h3>
+            <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних
+              и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми
+              сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
+            <a class="about__button" href="#">подробнее о проекте
+              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <use href="__spritemap#sprite-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="about__footer">
+          <div class="about__content">
+            <svg width="18" height="22" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <use href="__spritemap#sprite-star"></use>
+            </svg>
+            <h4>Более 250 программ</h4>
+            <p>учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
+          </div>
+          <div class="about__content">
+            <svg width="18" height="22" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <use href="__spritemap#sprite-star"></use>
+            </svg>
+            <h4>Более 3000 участников</h4>
+            <p>уже успешно прошли программу
+              от «Стажировка» и остались в разных
+              странах</p>
+          </div>
+          <div class="about__content">
+            <svg width="18" height="22" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <use href="__spritemap#sprite-star"></use>
+            </svg>
+            <h4>от 4 200 $
+              до 8 400 $</h4>
+            <p>грант всем участникам для комфортного прохождения программы</p>
+          </div>
+          <div class="about__content">
+            <svg width="18" height="22" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <use href="__spritemap#sprite-star"></use>
+            </svg>
+            <h4>участники
+              из 60 стран</h4>
+            <p>студенты со всего мира приезжают на программу
+              «Стажировка»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" data-test="programs">
+      <div class="programs__container container">
+        <div class="programs__swiper swiper">
+          <div class="programs__wrapper">
+            <h2 class="programs__slogan">Программы</h2>
+            <a class="programs__all" href="#">все программы
+              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <use href="__spritemap#sprite-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="programs__slider swiper-wrapper">
+            <div class="programs__blocks swiper-slide">
+              <div class="programs__picture">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/one-mobile.webp 1x, img/one-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1439px)"
+              srcset="img/one-tablet.webp 1x, img/one-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/one.webp 1x, img/one@2x.webp 2x">
+            <source type="image/png" media="(max-width: 767px)"
+              srcset="img/one-mobile.png 1x, img/one-mobile@2x.png 2x">
+            <source type="image/png" media="(max-width: 1439px)"
+              srcset="img/one-tablet.png 1x, img/one-tablet@2x.png 2x"> -->
+                  <img src="img/one.png" srcset="img/one@2x.png 2x" width="392" height="420" alt="Стажировки">
+                </picture>
+              </div>
+              <div class="programs__content">
+                <div class="programs__header">
+                  <h3>Стажировки</h3>
+                </div>
+                <div class="programs__footer">
+                  <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <use href="__spritemap#sprite-arrow"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="programs__blocks">
+              <div class="programs__picture">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/two-mobile.webp 1x, img/two-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1439px)"
+              srcset="img/two-tablet.webp 1x, img/two-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/two.webp 1x, img/two@2x.webp 2x">
+            <source type="image/png" media="(max-width: 767px)"
+              srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
+            <source type="image/png" media="(max-width: 1439px)"
+              srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x"> -->
+                  <img src="img/two.png" srcset="img/two@2x.png 2x" width="392" height="420" alt="Волонтёрство">
+                </picture>
+              </div>
+              <div class="programs__content">
+                <div class="programs__header">
+                  <h3>Волонтёрство</h3>
+                </div>
+                <div class="programs__footer">
+                  <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <use href="__spritemap#sprite-arrow"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="programs__blocks">
+              <div class="programs__picture">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/three-mobile.webp 1x, img/three-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1439px)"
+              srcset="img/three-tablet.webp 1x, img/three-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/three.webp 1x, img/three@2x.webp 2x">
+            <source type="image/png" media="(max-width: 767px)"
+              srcset="img/three-mobile.png 1x, img/three-mobile@2x.png 2x">
+            <source type="image/png" media="(max-width: 1439px)"
+              srcset="img/three-tablet.png 1x, img/three-tablet@2x.png 2x"> -->
+                  <img src="img/three.png" srcset="img/three@2x.png 2x" width="392" height="420" alt="Учёба">
+                </picture>
+              </div>
+              <div class="programs__content">
+                <div class="programs__header">
+                  <h3>Учёба</h3>
+                </div>
+                <div class="programs__footer">
+                  <p>Получите образование и измените своё будущее.</p>
+                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <use href="__spritemap#sprite-arrow"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="programs__navigation">
+            <div class="arrows-slider programs__arrows">
+              <button class="arrows-slider__btn arrows-slider__btn--left" id="programs-slider-prev" type="button"
+                aria-label="назад.">
+                <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-left"></use>
+                </svg>
+              </button>
+              <button class="arrows-slider__btn arrows-slider__btn--right" id="programs-slider-next" type="button"
+                aria-label="вперед.">
+                <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grant" data-test="grant">
+      <div class="grant__container container">
+        <div class="grant__general">
+          <div class="grant__block">
+            <h2 class="grant__slogan">Как поехать</h2>
+            <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных
+              программах и&nbsp;городах, в которых можете пройти программу.</p>
+            <div class="grant__picture">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+          srcset="img/grant-mobile.webp 1x, img/grant-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1439px)"
+          srcset="img/grant-tablet.webp 1x, img/grant-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/grant.webp 1x, img/grant@2x.webp 2x">
+        <source type="image/png" media="(max-width: 767px)"
+          srcset="img/grant-mobile.png 1x, img/grant-mobile@2x.png 2x">
+        <source type="image/png" media="(max-width: 1439px)"
+          srcset="img/grant-tablet.png 1x, img/grant-tablet@2x.png 2x"> -->
+                <img src="img/grant.png" srcset="img/grant@2x.png 2x" width="498" height="363" alt="дорога">
+              </picture>
+            </div>
+          </div>
+          <div class="grant__content">
+            <h3 class="grant__title">Чтобы получить грант
+              на обучение, вам нужно:</h3>
+            <div class="grant__miniblock">
+              <p class="grant__description">Быть в возрасте от 16 до 30 лет<span>1</span></p>
+              <p class="grant__description">Иметь оконченное среднее образование<span>2</span></p>
+              <p class="grant__description">Иметь документально подтверждённое отсутствие судимости и пройти консульскую
+                проверку<span>3</span></p>
+              <p class="grant__description">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной
+                стране<span>4</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news" data-test="news">
+      <div class="news__container container">
+        <h2 class="news__slogan">Новости и материалы</h2>
+        <div class="news__content">
+          <a class="news__link is-active">общее</a>
+          <a class="news__link">волонтёрство</a>
+          <a class="news__link">стажировка</a>
+          <a class="news__link">карьера</a>
+          <a class="news__link">путешествия</a>
+        </div>
+        <div class="news__slider">
+          <div class="news__block">
+            <div class="news__background">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/news--mobile.webp 1x, img/news-one-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/news--tablet.webp 1x, img/news-one-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/news-one.webp 1x, img/news-one@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img/news-one-mobile.png 1x, img/news-one-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/news-one-tablet.png 1x, img/news-one-tablet@2x.png 2x"> -->
+                <img src="img/news-one.png" srcset="img/news@2x.png 2x" width="604" height="400" alt="стажер">
+              </picture>
+            </div>
+            <div class="news__miniblock">
+              <div class="news__header">
+                <p class="news__span">23/03/2023</p>
+                <h3>Интервью с участницей программы стажировки</h3>
+              </div>
+              <div class="news__footer">
+                <p>Саша рассказывает, как попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block">
+            <div class="news__background">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/news-two-mobile.webp 1x, img/news-two-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/news-two-tablet.webp 1x, img/news-two-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/news-two.webp 1x, img/news-two@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img/news-two-mobile.png 1x, img/news-two-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/news-two-tablet.png 1x, img/news-two-tablet@2x.png 2x"> -->
+                <img src="img/news-two.png" srcset="img/news-two@2x.png 2x" width="286" height="400" alt="стажер">
+              </picture>
+            </div>
+            <div class="news__miniblock">
+              <div class="news__header">
+                <p class="news__span">20/03/2023</p>
+                <h3>Путешествуем по миру</h3>
+              </div>
+              <div class="news__footer">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block">
+            <div class="news__background">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/news-three-mobile.webp 1x, img/news-three-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/news-three-tablet.webp 1x, img/news-three-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/news-three.webp 1x, img/news-three@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img.news-three-mobile.png 1x, img/news-three-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/news-three-tablet.png 1x, img/news-three-tablet@2x.png 2x"> -->
+                <img src="img/news-three.png" srcset="img/news-three@2x.png 2x" width="286" height="400" alt="стажер">
+              </picture>
+            </div>
+            <div class="news__miniblock">
+              <div class="news__header">
+                <p class="news__span">17/03/2023</p>
+                <h3>Новая программа волонтёрства</h3>
+              </div>
+              <div class="news__footer">
+                <p>Программа помощи детямдлительностью 4 месяца</p>
+                <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block">
+            <div class="news__background">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/news-four-mobile.webp 1x, img/news-four-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/news-four-tablet.webp 1x, img/news-four-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/news-four.webp 1x, img/news-four@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img/news-four-mobile.png 1x, img/news-four-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/news-four-tablet.png 1x, img/news-four-tablet@2x.png 2x"> -->
+                <img src="img/news-four.png" srcset="img/news-four@2x.png 2x" width="286" height="400" alt="стажер">
+              </picture>
+            </div>
+            <div class="news__miniblock">
+              <div class="news__header">
+                <p class="news__span">10/03/2023</p>
+                <h3>Построй свою карьеру</h3>
+              </div>
+              <div class="news__footer">
+                <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__pagination">
+        <h3 class="visually-hidden">Пагинация.</h3>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news__link" href="#">
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link news__link--current">1</a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">2</a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">3</a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">4</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="faq" data-test="FAQ">
+      <div class="faq__container container">
+        <h2 class="faq__slogan">Вопросы и ответы</h2>
+        <div class="faq__block"></div>
+      </div> -->
+
+    <section class="faq" data-test="faq">
+      <div class="faq__container container">
+        <h2 class="faq__slogan">Вопросы и ответы</h2>
+        <div class="faq__tabs" data-tabs="parent">
+          <div class="faq__content" data-tabs="content">
+            <div class="faq__element accordion" data-tabs="element" data-accordion="parent">
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Что такое грант на обучение?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как определяется стоимость программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как выглядит полный процесс регистрациина программу «Стажировка»?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__element accordion" data-tabs="element" data-accordion="parent">
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Что такое грант на обучение?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как определяется стоимость программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как выглядит полный процесс регистрациина программу «Стажировка»?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__element accordion" data-tabs="element" data-accordion="parent">
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Что такое грант на обучение?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как определяется стоимость программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как выглядит полный процесс регистрациина программу «Стажировка»?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__element accordion" data-tabs="element" data-accordion="parent">
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Что такое грант на обучение?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как определяется стоимость программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как выглядит полный процесс регистрациина программу «Стажировка»?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__element accordion" data-tabs="element" data-accordion="parent">
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Что такое грант на обучение?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как определяется стоимость программы?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <div class="accordion__block">
+                  <h3 class="accordion__title">Как выглядит полный процесс регистрациина программу «Стажировка»?</h3>
+                  <button class="accordion__button" type="button" data-accordion="button" aria-label="Посмотреть ответ">
+                    <span class="accordion__button-inner">
+                      <svg class="accordion__button-plus" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-plus"></use>
+                      </svg>
+                      <svg class="accordion__button-minus" width="20" height="2" viewBox="0 0 20 2" fill="none"
+                        stroke="#102654" xmlns="http://www.w3.org/2000/svg">
+                        <use href="__spritemap#sprite-minus"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев
+                      грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается
+                      определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" data-test="reviews">
+      <div class="reviews__container container">
+        <h2 class="reviews__slogan">Отзывы</h2>
+        <div class="reviews__slider">
+          <div class="reviews__general">
+            <div class="reviews__blocks">
+              <div class="reviews__content">
+                <div class="reviews__picture">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/lola-mobile.webp 1x, img/lola-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/-tablet.webp 1x, img/lola-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/lola.webp 1x, img/lola@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img/lola-mobile.png 1x, img/lola-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/lola-tablet.png 1x, img/lola-tablet@2x.png 2x"> -->
+                    <img src="img/lola.png" srcset="img/lola@2x.png 2x" width="90" height="90" alt="стажер">
+                  </picture>
+                </div>
+                <h3>Лола
+                  Алекс</h3>
+              </div>
+              <div class="reviews__header">
+                <div class="reviews__span">
+                  <span>программа</span>
+                  <span>Masa Art Challenge</span>
+                </div>
+                <div class="reviews__span">
+                  <span>Дата</span>
+                  <span>Осень 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__footer">
+              <h4>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h4>
+              <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
+                Сочетание
+                путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую
+                огромную
+                благодарность за предоставленную мне возможность.</p>
+            </div>
+          </div>
+          <div class="reviews__general">
+            <div class="reviews__blocks">
+              <div class="reviews__content">
+                <div class="reviews__picture">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/lola-mobile.webp 1x, img/lola-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1439px)"
+        srcset="img/-tablet.webp 1x, img/lola-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/lola.webp 1x, img/lola@2x.webp 2x">
+      <source type="image/png" media="(max-width: 767px)"
+        srcset="img/lola-mobile.png 1x, img/lola-mobile@2x.png 2x">
+      <source type="image/png" media="(max-width: 1439px)"
+        srcset="img/lola-tablet.png 1x, img/lola-tablet@2x.png 2x"> -->
+                    <img src="img/david.png" srcset="img/david@2x.png 2x" width="90" height="90" alt="стажер">
+                  </picture>
+                </div>
+                <h3>Давид
+                  Иванов</h3>
+              </div>
+              <div class="reviews__header">
+                <div class="reviews__span">
+                  <span>программа</span>
+                  <span>Volunteer Chance</span>
+                </div>
+                <div class="reviews__span">
+                  <span>Дата</span>
+                  <span>Лето 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__footer">
+              <h4>Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h4>
+              <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал
+                эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем
+                уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__navigation">
+          <div class="arrows-slider reviews__arrows">
+            <button class="arrows-slider__btn arrows-slider__btn--left" id="reviews-slider-prev" type="button"
+              aria-label="назад.">
+              <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <use href="__spritemap#sprite-left"></use>
+              </svg>
+            </button>
+            <button class="arrows-slider__btn arrows-slider__btn--right" id="reviews-slider-next" type="button"
+              aria-label="вперед.">
+              <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <use href="__spritemap#sprite-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="contacts" data-test="contacts">
+      <div class="contacts__container container">
+        <div class="contacts__general">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__slogan">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__text">центральный офис</p>
+                <p class="contacts__description">г. Новосибирск, ул. Щетинкина 68, культурный центр
+                </p>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Телефон</p>
+                <a class="contacts__description" href="+796387687676">+7 963 876 876 76
+                </a>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Email</p>
+                <a class="contacts__description" href="mailto:Info@stazh.ru">Info@stazh.ru
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__image">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x"> -->
+              <img src="img/map.png" srcset="img/map@2x.png 2x" width="1240" height="500" alt="Карта">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <form class="form" data-test="form">
+      <div class="form__container container">
+        <div class="form__wrapper">
+          <div class="form__background">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/city-mobile.webp 1x, img/city-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/city.webp 1x, img/city@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/city-mobile.png 1x, img/city-mobile@2x.png 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/city-tablet.png 1x, img/city-tablet@2x.png 2x"> -->
+              <img src="img/city.png" srcset="img/city@2x.png 2x" width="1240" height="803" alt="Карта">
+            </picture>
+          </div>
+          <div class="form__fieldset">
+            <legend class="form__legend">Напишите нам</legend>
+            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <div class="form__field-block">
+              <div class="form__field-group">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" id="name" name="the-name" placeholder="Имя" required>
+                <span class="form__error">Текст ошибки</span>
+              </div>
+              <div class="form__field-group">
+                <label class="visually-hidden" for="telephone">Телефон</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Телефон" required>
+                <span class="form__error">Текст ошибки</span>
+              </div>
+              <div class="form__field-group">
+                <textarea class="form__placeholder" name="message" id="message" cols="30" rows="10"
+                  placeholder="">Выберите город</textarea>
+                <span class="form__error">Текст ошибки</span>
+              </div>
+              <div class="form__field-group">
+                <label class="visually-hidden" for="city">Выберите город</label>
+                <input type="text" id="city" name="the-city" placeholder="Города" required>
+                <span class="form__error">Текст ошибки</span>
+              </div>
+              <button class="form__button" type="submit">отправить</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="footer" data-test="footer">
+    <div class="footer__container container">
+      <div class="footer__wrapper">
+        <div class="footer__header">
+          <a class="footer__logo logo" href="index.html">
+            <span class="visually-hidden">Логотип</span>
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <use href="__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+          <div class="footer__nav-wrapper">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#about">
+                  О проекте
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#programs">
+                  Программы
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#faq">
+                  Как поехать
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#reviews">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#news">
+                  Новости
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg width="16" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Однокласниках.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <use href="__spritemap#sprite-reddit"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Редите.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__content">
+        <a class="footer__description" href="#">Стажировка © 2023 Все права защищены</a>
+        <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
   <script type="module" src="js/main.js"></script>
 </body>
 

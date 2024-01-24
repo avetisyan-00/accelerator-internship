@@ -1,0 +1,44 @@
+.arrows-slider {
+  display: flex;
+  width: 78px;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.arrows-slider__btn {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  border: 1px solid transparent;
+  background: #0266c1;
+  color: #ffffff;
+
+  &:hover,
+  &:focus-visible {
+    background: transparent;
+    border-color: #1c3374;
+    color: #1c3374;
+  }
+
+  &:active {
+    background: #1c3374;
+    border-color: #1c3374;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background: #999999;
+    border-color: transparent;
+    color: #ffffff;
+  }
+
+  svg {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+
+  &--right svg {
+    left: 11px;
+  }
+}

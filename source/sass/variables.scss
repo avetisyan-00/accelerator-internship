@@ -1,0 +1,7 @@
+$tablet-width: 1439px;
+$mobile-width: 767px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+
+$ff-manrope: "Manrope", "Arial", sans-serif;

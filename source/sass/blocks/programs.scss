@@ -1,0 +1,132 @@
+.programs {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.programs__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.programs__slogan {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #316dc2;
+  margin: 0;
+}
+
+.programs__all {
+  font-family: $ff-manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #316dc2;
+  border-radius: 30px;
+  border: 1px solid #316dc2;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+  padding-right: 80px;
+  position: relative;
+
+  svg {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #ffffff;
+    border-radius: 44px;
+    background-color: #316dc2;
+  }
+}
+
+.programs__header {
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #316dc2;
+    // background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    padding: 18px 18px 6px 18px;
+    margin: 0;
+  }
+}
+
+.programs__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #484848;
+    // background-color: #ffffff;
+    border-radius: 0 12px 12px 12px;
+    padding: 12px 18px 15px 18px;
+    margin: 0;
+    margin-top: -1px;
+  }
+}
+
+.programs__button {
+  width: 30px;
+  height: 30px;
+  background-color: #316dc2;
+  border-radius: 44px;
+  padding: 10px;
+}
+
+.programs__blocks {
+  width: 392px;
+  padding: 0 51px 20px 20px;
+  min-height: 420px;
+  background: rgba(49, 109, 194, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 12px;
+}
+
+.programs__content {
+  // padding: 280px 51px 20px 20px;
+  position: relative;
+  z-index: 5;
+  background-color: #ffffff;
+}
+
+.programs__swiper {
+  position: relative;
+}
+
+.programs__slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.programs__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}

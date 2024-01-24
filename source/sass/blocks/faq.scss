@@ -1,0 +1,52 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.faq__slogan {
+  font-family: $ff-manrope;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #316dc2;
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.faq__content {
+  flex-grow: 1;
+}
+
+.faq__element {
+  width: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .faq__slogan {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .faq__slogan {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 37px;
+  }
+}

@@ -1,0 +1,150 @@
+.accordion__title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  position: relative;
+  color: #316dc2;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-right: 100px;
+}
+
+.accordion__element {
+  padding: 40px;
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid #316dc2;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.accordion__element.is-active {
+  .accordion__button-inner {
+    background-color: #316dc2;
+  }
+
+  .accordion__button-minus {
+    display: block;
+    stroke: #ffffff;
+  }
+
+  .accordion__button-plus {
+    display: none;
+  }
+}
+
+.accordion__button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .accordion__button-inner {
+      background-color: #316dc2;
+    }
+
+    svg {
+      stroke: #ffffff;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.accordion__button-inner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #316dc2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.accordion__button-minus {
+  display: none;
+}
+
+.accordion__wrapper {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0efe9;
+  padding-top: 4px;
+  font-weight: 400;
+  max-width: 660px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.accordion__block {
+  position: relative;
+}
+
+@media (max-width: $tablet-width) {
+  .accordion__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .accordion__wrapper {
+    max-width: 550px;
+    padding-top: 2px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .accordion__title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 50px;
+    display: block;
+  }
+
+  .accordion__wrapper {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+
+  .accordion__button-inner {
+    height: 30px;
+    width: 30px;
+  }
+
+  .accordion__button-minus {
+    width: 14px;
+  }
+
+  .accordion__button-plus {
+    height: 14px;
+    width: 14px;
+  }
+
+  .accordion__element {
+    padding: 22px 0 21px;
+  }
+}

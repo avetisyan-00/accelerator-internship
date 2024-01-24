@@ -1,0 +1,251 @@
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  z-index: 3;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1134px;
+}
+
+.about__block {
+  display: block;
+
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #484848;
+  }
+}
+
+.about__miniblock {
+  display: block;
+  align-self: flex-end;
+  margin-left: auto;
+
+  h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #316dc2;
+    margin: 0;
+    margin-bottom: 46px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #484848;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.about__slogan {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #316dc2;
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+.about__button {
+  font-family: $ff-manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: #316dc2;
+  text-decoration: none;
+  border: 1px solid #316dc2;
+  border-radius: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+  padding-right: 80px;
+}
+
+.about__footer {
+  margin-top: 60px;
+  background-color: #316dc2;
+  min-width: 1240px;
+  padding: 50px 106px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.about__content {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid #f0efe9;
+  padding: 30px 60px;
+  width: 478px;
+  margin-bottom: 32px;
+  margin-right: 52px;
+  display: flex;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #f0efe9;
+    margin: 0;
+    margin-bottom: 46px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #f0efe9;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+}
+
+.about__content svg {
+  position: absolute;
+  left: -9px;
+  top: -12px;
+  color: #ffffff;
+  width: 18px;
+  height: 22px;
+  background-color: #316dc2;
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about__wrapper {
+    display: block;
+    min-width: 498px;
+  }
+
+  .about__slogan {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+
+  .about__block {
+    p {
+      font-size: 20px;
+      line-height: 26px;
+      color: #484848;
+    }
+  }
+
+  .about__miniblock {
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 46px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .about__footer {
+    min-width: 678px;
+    padding: 40px;
+  }
+
+  .about__content {
+    display: block;
+    width: 264px;
+    padding: 30px;
+
+    h4 {
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
+
+  .about__block {
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #484848;
+    }
+  }
+
+  .about__miniblock {
+    .h3 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 46px;
+    }
+
+    .p {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .about__button {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+
+  .about__content {
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.16px;
+      margin-bottom: 46px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
