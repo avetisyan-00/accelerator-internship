@@ -1,12 +1,13 @@
 import Swiper from 'swiper/bundle';
 const sliderSlider = document.querySelector('.slider');
-const sliderPrograms = document.querySelector('.programs');
+const sliderPrograms = document.querySelector('.programs__swiper');
 
 const initSliderSlider = () => {
   if (sliderSlider) {
     // eslint-disable-next-line
     new Swiper(sliderSlider, {
       slidesPerView: 1,
+      loop: true,
       pagination: {
         el: '.slider__bullets',
         type: 'bullets',
@@ -14,7 +15,6 @@ const initSliderSlider = () => {
         bulletClass: 'slider__bullet',
         bulletActiveClass: 'slider__bullet--active',
         modifierClass: 'slider__',
-        loop: true,
         clickable: true,
       },
     });
@@ -25,7 +25,11 @@ const initSliderPrograms = () => {
   if (sliderPrograms) {
     // eslint-disable-next-line
     new Swiper(sliderPrograms, {
-      initialSlide: 1,
+      scrollbar: {
+        el: '.programs__scrollbar',
+        dragClass: 'programs__scrollbar-drag',
+        horizontalClass: 'programs__scrollbar-horizontal',
+      },
       navigation: {
         nextEl: '#programs-slider-next',
         prevEl: '#programs-slider-prev',

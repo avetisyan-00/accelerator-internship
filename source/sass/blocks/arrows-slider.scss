@@ -1,0 +1,41 @@
+.arrows-slider {
+  display: flex;
+  width: 78px;
+  justify-content: space-between;
+}
+
+.arrows-slider__btn {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  color: #316dc2;
+
+  &:hover,
+  &:focus-visible {
+    background: #ffffff;
+    color: #316dc2;
+  }
+
+  &:active {
+    background: #ffffff;
+    color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:disabled {
+    background: transparent;
+    color: #a9afb7;
+  }
+
+  svg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  // &--right svg {
+  //   left: 11px;
+  // }
+}
