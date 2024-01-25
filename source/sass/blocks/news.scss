@@ -24,21 +24,66 @@
   margin-bottom: 54px;
 }
 
-.news__link {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0.28px;
-  text-transform: uppercase;
-  color: #316dc2;
-  opacity: 0.6;
+// .news__link {
+//   text-decoration: none;
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 14px;
+//   letter-spacing: 0.28px;
+//   text-transform: uppercase;
+//   color: #316dc2;
+//   opacity: 0.6;
 
-  &--is-active {
-    border-radius: 20px;
-    border: 1px solid #316dc2;
-    opacity: 0;
-  }
+//   &--is-active {
+//     border-radius: 20px;
+//     border: 1px solid #316dc2;
+//     opacity: 0;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     color: #316dc2;
+//     outline: none;
+//     border: 1px solid #316dc2;
+//     border-radius: 20px;
+
+//     svg {
+//       fill: #ffffff;
+//     }
+//   }
+
+//   &:active {
+//     color: #ffffff;
+//     background-color: #275699;
+//   }
+
+//   &:disabled,
+//   &--disabled {
+//     color: #ffffff;
+//   }
+// }
+
+.news__link {
+  color: #316dc2;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 4px;
+  display: block;
+  min-height: 40px;
+  min-width: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px;
+  position: relative;
+  opacity: 0.5;
+
+  // &--is-active {
+  //   border-radius: 20px;
+  //   border: 1px solid #316dc2;
+  //   opacity: 1;
+  // }
 
   &:hover,
   &:focus {
@@ -71,25 +116,28 @@
   height: 100%;
 
   img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px;
   }
 }
 
-.news__block {
-  position: relative;
+.news .news__block {
+  // position: relative;
   z-index: 5;
   width: 604px;
+  min-height: 420px;
 }
 
 .news__miniblock {
   position: relative;
-  background-color: #ffffff;
   width: 405px;
   text-align: left;
   display: block;
   justify-content: flex-end;
-  top: 233px;
+  top: 217px;
+  left: -1px;
 
   h3 {
     font-size: 24px;
@@ -109,12 +157,67 @@
   text-transform: uppercase;
   color: #316dc2;
   margin-bottom: 24px;
+  background: #f0efe9;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  border-radius: 0 12px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: -1px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/sprite/angle.svg");
+    transform: rotate(-90deg);
+    color: #f0efe9;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 76px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/sprite/angle.svg");
+    transform: rotate(-90deg);
+    color: #f0efe9;
+  }
+}
+
+.news__header {
+  border-radius: 0 12px 0 0;
+  background: #f0efe9;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-bottom: 6px;
+  width: 291px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 90px;
+    right: 90px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/sprite/angle.svg");
+    transform: rotate(-90deg);
+    color: #f0efe9;
+  }
 }
 
 .news__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 0 12px;
+  background: #f0efe9;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  margin-top: -1px;
 
   p {
     font-size: 14px;
@@ -126,55 +229,29 @@
     padding-bottom: 15px;
     width: 325px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/sprite/angle.svg");
+    transform: rotate(-90deg);
+    color: #f0efe9;
+  }
 }
 
 .news__slider {
   position: relative;
 }
 
-.news__link {
-  color: #316dc2;
-  text-decoration: none;
-  background-color: transparent;
-  border-radius: 4px;
-  display: block;
-  min-height: 40px;
-  min-width: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  padding: 8px;
-  position: relative;
-  opacity: 0.5;
-
-  &:hover,
-  &:focus {
-    color: #316dc2;
-    outline: none;
-    border: 1px solid #316dc2;
-    border-radius: 20px;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:active {
-    color: #ffffff;
-    background-color: #275699;
-  }
-
-  &:disabled,
-  &--disabled {
-    color: #ffffff;
-  }
-}
-
 .news__link--current {
   color: #ffffff;
   background-color: #316dc2;
   border-radius: 20px;
+  opacity: 1;
 }
 
 .news__list {
@@ -198,3 +275,7 @@
   }
 }
 
+.news__general {
+  display: flex;
+  align-items: center;
+}

@@ -403,13 +403,15 @@
               <div class="arrows-slider programs__arrows">
                 <button class="arrows-slider__btn arrows-slider__btn--left" id="programs-slider-prev" type="button"
                   aria-label="назад.">
-                  <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+                  <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor">
                     <use href="__spritemap#sprite-left"></use>
                   </svg>
                 </button>
                 <button class="arrows-slider__btn arrows-slider__btn--right" id="programs-slider-next" type="button"
                   aria-label="вперед.">
-                  <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+                  <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor">
                     <use href="__spritemap#sprite-right"></use>
                   </svg>
                 </button>
@@ -458,9 +460,9 @@
       </div>
     </section>
 
-    <section class="news" data-test="news">
+    <section class="news swiper" data-test="news">
       <div class="news__container container">
-        <h2 class="news__slogan">Новости и материалы</h2>
+        <h2 class="news__slogan">Новости и материалы</h2>
         <div class="news__content">
           <a class="news__link is-active">общее</a>
           <a class="news__link">волонтёрство</a>
@@ -468,8 +470,8 @@
           <a class="news__link">карьера</a>
           <a class="news__link">путешествия</a>
         </div>
-        <div class="news__slider">
-          <div class="news__block">
+        <div class="news__slider swiper-wrapper">
+          <div class="news__block swiper-slide">
             <div class="news__background">
               <picture>
                 <!-- <source type="image/webp" media="(max-width: 767px)"
@@ -485,8 +487,8 @@
               </picture>
             </div>
             <div class="news__miniblock">
+              <span class="news__span">23/03/2023</span>
               <div class="news__header">
-                <p class="news__span">23/03/2023</p>
                 <h3>Интервью с участницей программы стажировки</h3>
               </div>
               <div class="news__footer">
@@ -498,7 +500,7 @@
               </div>
             </div>
           </div>
-          <div class="news__block">
+          <div class="news__block swiper-slide">
             <div class="news__background">
               <picture>
                 <!-- <source type="image/webp" media="(max-width: 767px)"
@@ -527,7 +529,7 @@
               </div>
             </div>
           </div>
-          <div class="news__block">
+          <div class="news__block swiper-slide">
             <div class="news__background">
               <picture>
                 <!-- <source type="image/webp" media="(max-width: 767px)"
@@ -556,7 +558,7 @@
               </div>
             </div>
           </div>
-          <div class="news__block">
+          <div class="news__block swiper-slide">
             <div class="news__background">
               <picture>
                 <!-- <source type="image/webp" media="(max-width: 767px)"
@@ -586,28 +588,48 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="news__pagination">
-        <h3 class="visually-hidden">Пагинация.</h3>
-        <ul class="news__list">
-          <li class="news__item">
-            <a class="news__link" href="#">
-            </a>
-          </li>
-          <li class="news__item">
-            <a class="news__link news__link--current">1</a>
-          </li>
-          <li class="news__item">
-            <a class="news__link" href="#">2</a>
-          </li>
-          <li class="news__item">
-            <a class="news__link" href="#">3</a>
-          </li>
-          <li class="news__item">
-            <a class="news__link" href="#">4</a>
-          </li>
-        </ul>
+        <div class="news__general">
+          <div class="news__pagination">
+            <h3 class="visually-hidden">Пагинация.</h3>
+            <ul class="news__list">
+              <li class="news__item">
+                <a class="news__link" href="#">
+                </a>
+              </li>
+              <li class="news__item">
+                <a class="news__link news__link--current">1</a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#">2</a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#">3</a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#">4</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news__navigation">
+            <div class="arrows-slider news__arrows">
+              <button class="arrows-slider__btn arrows-slider__btn--left" id="news-slider-prev" type="button"
+                aria-label="назад.">
+                <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
+                  stroke="currentColor">
+                  <use href="__spritemap#sprite-left"></use>
+                </svg>
+              </button>
+              <button class="arrows-slider__btn arrows-slider__btn--right" id="news-slider-next" type="button"
+                aria-label="вперед.">
+                <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
+                  stroke="currentColor">
+                  <use href="__spritemap#sprite-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

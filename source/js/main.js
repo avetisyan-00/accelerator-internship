@@ -1,10 +1,11 @@
 // https://swiperjs.com/get-started#installation
 // import Swiper from 'swiper/bundle';
 // import {Navigation, Pagination} from "swiper/modules";
-import {initSliderPrograms, initSliderSlider, initSliderReviews} from './modules/slide-slider';
+import {initSliderPrograms, initSliderSlider, initSliderReviews, initSliderNews} from './modules/slide-slider';
 // import {initSliderPrograms} from './modules/slide-programs';
 // import {initAccordions} from './modules/accordions';
 // import {initSliderReviews} from './modules/slide-reviews';
+// import {initSliderReviews} from './modules/slide-news';
 // import {Burger} from './modules/burger';
 // import './modules/sticky-header';
 
@@ -15,8 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   initSliderSlider();
   initSliderPrograms();
+  initSliderReviews();
+  initSliderNews();
   // initAccordions();
-  // initSliderReviews();
 
   // const burger = new Burger();
   // window.burger = burger;
