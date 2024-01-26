@@ -1,4 +1,4 @@
-.accordion__title {
+.accordion h3 {
   font-size: 28px;
   font-weight: 400;
   line-height: 34px;
@@ -20,20 +20,20 @@
   background-color: transparent;
 }
 
-.accordion__element.is-active {
-  .accordion__button-inner {
-    background-color: #316dc2;
-  }
+// .accordion__element.is-active {
+//   .accordion__button-inner {
+//     background-color: #316dc2;
+//   }
 
-  .accordion__button-minus {
-    display: block;
-    stroke: #ffffff;
-  }
+//   .accordion__button-minus {
+//     display: block;
+//     stroke: #ffffff;
+//   }
 
-  .accordion__button-plus {
-    display: none;
-  }
-}
+//   .accordion__button-plus {
+//     display: none;
+//   }
+// }
 
 .accordion__button {
   background: transparent;
@@ -101,10 +101,11 @@
 
 .accordion__block {
   position: relative;
+  border: none;
 }
 
 @media (max-width: $tablet-width) {
-  .accordion__title {
+  .accordion h3 {
     font-size: 22px;
     line-height: 22px;
   }
@@ -117,7 +118,7 @@
 
 
 @media (max-width: $mobile-width) {
-  .accordion__title {
+  .accordion h3 {
     font-size: 20px;
     line-height: 20px;
     padding-right: 50px;

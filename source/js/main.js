@@ -3,7 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 import {initSliderPrograms, initSliderSlider, initSliderReviews, initSliderNews} from './modules/slide-slider';
 // import {initSliderPrograms} from './modules/slide-programs';
-// import {initAccordions} from './modules/accordions';
+import {initAccordions} from './modules/init-accordion';
 // import {initSliderReviews} from './modules/slide-reviews';
 // import {initSliderReviews} from './modules/slide-news';
 // import {Burger} from './modules/burger';
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSliderPrograms();
   initSliderReviews();
   initSliderNews();
-  // initAccordions();
+  initAccordions();
 
   // const burger = new Burger();
   // window.burger = burger;

@@ -68,7 +68,8 @@
     right: 89px;
     width: 26px;
     height: 26px;
-    background-image: url("../../img/sprite/angle.svg");
+    mask-image: url("../../img/sprite/angle.svg");
+    background-color: #ffffff;
     transform: rotate(-85deg);
   }
 }
