@@ -3,6 +3,7 @@
 }
 
 .slider__container {
+  position: relative;
   z-index: 2;
 }
 
@@ -136,7 +137,7 @@
   position: absolute;
   z-index: 5;
   top: 397px;
-  left: calc(50% - 600px);
+  left: 45px;
   right: auto;
   width: auto;
   background-color: #ffffff;
@@ -213,7 +214,7 @@
 
   .slider__bullets {
     top: 397px;
-    left: calc(50% - 498px);
+    // left: calc(50% - 498px);
   }
 }
 
