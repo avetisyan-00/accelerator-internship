@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 const sliderSlider = document.querySelector('.slider');
 const sliderPrograms = document.querySelector('.programs__swiper');
 const sliderReviews = document.querySelector('.reviews__slider');
-const sliderNews = document.querySelector('.news');
+const sliderNews = document.querySelector('.news__container');
 
 const initSliderSlider = () => {
   if (sliderSlider) {

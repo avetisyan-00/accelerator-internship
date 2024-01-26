@@ -19,14 +19,17 @@
 
 .header__logo {
   position: relative;
-  padding: 11px 31px 10px;
+  // padding: 11px 31px 10px;
   color: #316dc2;
   height: 52px;
   width: 52px;
-  border-radius: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
 
   svg {
     position: absolute;
+    top: 10px;
+    left: 13px;
   }
 }
 
