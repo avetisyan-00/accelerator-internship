@@ -65,7 +65,7 @@
     content: "";
     position: absolute;
     top: 26px;
-    right: 89px;
+    right: 106px;
     width: 26px;
     height: 26px;
     mask-image: url("../../img/sprite/angle.svg");
@@ -93,11 +93,11 @@
 }
 
 .programs__button {
-  // width: 30px;
-  // height: 30px;
-  // background-color: #316dc2;
-  // border-radius: 44px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   position: relative;
+  flex-shrink: 0;
 
   &::after {
     content: "";

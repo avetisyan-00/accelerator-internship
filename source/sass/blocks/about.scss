@@ -7,7 +7,6 @@
 .about__wrapper {
   display: flex;
   justify-content: space-between;
-  min-width: 1134px;
 }
 
 .about__block {
@@ -78,11 +77,11 @@
 .about__footer {
   margin-top: 60px;
   background-color: #316dc2;
-  min-width: 1240px;
-  padding: 50px 106px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 72px 106px 32px 126px;
   border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 54px 52px;
 }
 
 .about__content {
@@ -90,23 +89,7 @@
   border-radius: 16px;
   border: 1px solid #f0efe9;
   padding: 30px 60px;
-  width: 478px;
-  margin-bottom: 32px;
-  margin-right: 52px;
   display: flex;
-
-  &:nth-child(2) {
-    margin-right: 0;
-  }
-
-  &:nth-child(3) {
-    margin-bottom: 0;
-  }
-
-  &:nth-child(4) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
 
   h4 {
     font-size: 26px;
@@ -114,8 +97,9 @@
     line-height: 30px;
     color: #f0efe9;
     margin: 0;
-    margin-bottom: 46px;
     text-transform: uppercase;
+    width: fit-content;
+    margin-right: 30px;
   }
 
   p {
@@ -124,7 +108,6 @@
     line-height: 20px;
     color: #f0efe9;
     margin: 0;
-    margin-bottom: 40px;
     margin-left: auto;
   }
 }
@@ -147,7 +130,6 @@
 
   .about__wrapper {
     display: block;
-    min-width: 498px;
   }
 
   .about__slogan {
@@ -185,7 +167,6 @@
   }
 
   .about__footer {
-    min-width: 678px;
     padding: 40px;
   }
 
