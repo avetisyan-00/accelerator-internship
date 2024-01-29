@@ -1,8 +1,29 @@
 html,
 body {
   height: 100%;
-  font-family: 'Manrope';
+  font-family: $ff-manrope;
   background-color: #f0efe9;
+}
+
+body {
+  &.overlay-opened {
+    overflow: hidden;
+
+    .overlay {
+      display: block;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(13, 29, 51, 0.4);
+  z-index: 20;
+  display: none;
 }
 
 .visually-hidden {

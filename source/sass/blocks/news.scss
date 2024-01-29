@@ -50,7 +50,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: #316dc2;
   }
 }
@@ -252,6 +252,18 @@
   margin-left: 20px;
   width: 32px;
   height: 32px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    border-color: #316dc2;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-color: #275699;
+    color: #ffffff;
+  }
 }
 
 .news__pagination-link--current {

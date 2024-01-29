@@ -11,8 +11,8 @@
 
   svg {
     position: absolute;
-    top: 10px;
-    left: 13px;
+    top: 13px;
+    left: 11px;
     color: #316cd2;
   }
 }
@@ -47,6 +47,15 @@
   line-height: 26px;
   color: #484848;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: #316cd2;
+  }
+
+  &:active {
+    color: #275699;
+  }
 }
 
 .footer__description {
@@ -65,4 +74,15 @@
   color: #484848;
   text-decoration: none;
   border-bottom: 1px solid #484848;
+
+  &:hover,
+  &:focus-visible {
+    color: #316cd2;
+    border-bottom: 1px solid #316cd2;
+  }
+
+  &:active {
+    color: #275699;
+    border-bottom: 1px solid #275699;
+  }
 }

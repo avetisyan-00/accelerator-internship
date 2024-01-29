@@ -2,14 +2,11 @@
 // import Swiper from 'swiper/bundle';
 // import {Navigation, Pagination} from "swiper/modules";
 import {initSliderPrograms, initSliderSlider, initSliderReviews, initSliderNews} from './modules/slide-slider';
-// import {initSliderPrograms} from './modules/slide-programs';
 import {initAccordions} from './modules/init-accordion';
-// import {initSliderReviews} from './modules/slide-reviews';
-// import {initSliderReviews} from './modules/slide-news';
-// import {Burger} from './modules/burger';
-// import './modules/sticky-header';
-
+import {menuToggle} from './modules/menu';
 import 'swiper/css/bundle';
+import { StickyHeader } from './modules/sticky-header';
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -19,6 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
   initSliderReviews();
   initSliderNews();
   initAccordions();
+  menuToggle();
+
+  const stickyHeader = new StickyHeader();
+  window.stickyHeader = stickyHeader;
+  stickyHeader.init();
 
   // const burger = new Burger();
   // window.burger = burger;
