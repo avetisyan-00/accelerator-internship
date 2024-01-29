@@ -12,17 +12,21 @@
 .social__link {
   color: #2d383f;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #316cd2;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  border-radius: 50%;
 
   svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #ffffff;
+    width: 16px;
+    height: 16px;
   }
 
   &:hover,

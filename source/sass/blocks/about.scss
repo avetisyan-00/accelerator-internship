@@ -1,6 +1,5 @@
 .about {
   padding-top: 120px;
-  padding-bottom: 120px;
   z-index: 3;
 }
 
@@ -27,7 +26,7 @@
   align-self: flex-end;
   margin-left: auto;
   width: 498px;
-  margin-right: 80px;
+  margin-right: 106px;
 
   h3 {
     font-size: 32px;
@@ -35,7 +34,8 @@
     line-height: 36px;
     color: #316dc2;
     margin: 0;
-    margin-bottom: 46px;
+    margin-bottom: 34px;
+    margin-top: -4px;
   }
 
   p {
@@ -44,7 +44,7 @@
     line-height: 26px;
     color: #484848;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 
@@ -54,7 +54,7 @@
   line-height: 50px;
   color: #316dc2;
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 37px;
 }
 
 // .about__button {
@@ -90,6 +90,7 @@
   border: 1px solid #f0efe9;
   padding: 30px 60px;
   display: flex;
+  padding-bottom: 21px;
 
   h4 {
     font-size: 26px;

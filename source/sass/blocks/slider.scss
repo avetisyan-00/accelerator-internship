@@ -13,16 +13,17 @@
   flex-direction: column;
   width: 968px;
   position: relative;
-  padding-top: 447px;
+  padding-top: 450px;
   padding-bottom: 60px;
 }
 
 .slider__footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 772px;
   border-radius: 0 0 30px 30px;
-  padding: 0 50px 35px;
+  padding: 0 50px 28px;
   background-color: #ffffff;
   position: relative;
 
@@ -47,13 +48,13 @@
   padding: 40px 50px 30px;
   background-color: #ffffff;
   margin: 0;
-  margin-bottom: -1px;
+  margin-bottom: -6px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 364px;
-    left: 116px;
+    bottom: 352px;
+    left: 93px;
     width: 26px;
     height: 26px;
     mask-image: url("../../img/sprite/angle.svg");
@@ -138,19 +139,18 @@
 .slider__bullets {
   position: absolute;
   z-index: 5;
-  top: 397px;
-  // left: 45px;
+  top: 411px;
   right: auto;
   width: auto;
   background-color: #ffffff;
-  padding-top: 20px;
+  padding-top: 11px;
   padding-bottom: 20px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 15px;
+  padding-right: 11px;
   border-radius: 20px 20px 0 0;
 
   .slider__bullet {
-    margin-left: 10px;
+    margin-left: 3px;
     margin-right: 10px;
     width: 10px;
     height: 10px;

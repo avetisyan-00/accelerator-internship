@@ -2,6 +2,21 @@
   padding-bottom: 60px;
 }
 
+.footer__logo {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  svg {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    color: #316cd2;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
