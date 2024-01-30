@@ -7,17 +7,24 @@ const sliderNews = document.querySelector('.news__container');
 const initSliderSlider = () => {
   if (sliderSlider) {
     // eslint-disable-next-line
-    new Swiper(sliderSlider, {
+const slider = new Swiper(sliderSlider, {
       slidesPerView: 1,
       loop: true,
       pagination: {
-        el: '.slider__bullets',
+        el: '.swiper-slide-active .slider__bullets',
         type: 'bullets',
         bulletElement: 'button',
         bulletClass: 'slider__bullet',
         bulletActiveClass: 'slider__bullet--active',
         modifierClass: 'slider__',
         clickable: true,
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          slider.pagination.init();
+          slider.pagination.render();
+          slider.pagination.update();
+        }
       },
     });
   }

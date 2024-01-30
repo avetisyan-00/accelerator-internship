@@ -49,18 +49,6 @@
   background-color: #ffffff;
   margin: 0;
   margin-bottom: -9px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 348px;
-    left: 93px;
-    width: 26px;
-    height: 26px;
-    mask-image: url("../../img/sprite/angle.svg");
-    background-color: #ffffff;
-    transform: rotate(-85deg);
-  }
 }
 
 .slider__footer p {
@@ -148,6 +136,18 @@
   padding-left: 15px;
   padding-right: 11px;
   border-radius: 20px 20px 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -26px;
+    width: 26px;
+    height: 26px;
+    mask-image: url("../../img/sprite/angle.svg");
+    background-color: #ffffff;
+    transform: rotate(-85deg);
+  }
 
   .slider__bullet {
     margin-left: 3px;
