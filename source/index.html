@@ -136,7 +136,7 @@
                 </p>
                 <a class="slider__button button" href="#">подробнее
                   <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor">
+                    stroke="currentColor">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </a>
@@ -172,7 +172,7 @@
                 </p>
                 <a class="slider__button button" href="#">подробнее
                   <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor">
+                    stroke="currentColor">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </a>
@@ -208,7 +208,7 @@
                 </p>
                 <a class="slider__button button" href="#">подробнее
                   <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor">
+                    stroke="currentColor">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </a>
@@ -234,7 +234,7 @@
               и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с&nbsp;которыми
               сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
             <a class="about__button button" href="#">подробнее о проекте
-              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                 <use href="__spritemap#sprite-arrow"></use>
               </svg>
             </a>
@@ -285,7 +285,7 @@
           <div class="programs__wrapper">
             <h2 class="programs__slogan">Программы</h2>
             <a class="programs__all button" href="#">все программы
-              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                 <use href="__spritemap#sprite-arrow"></use>
               </svg>
             </a>
@@ -313,7 +313,7 @@
                 <div class="programs__footer">
                   <p>Получите незаменимый опыт работы&nbsp;в крупнейших мировых компаниях.</p>
                   <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
                 </div>
@@ -341,7 +341,7 @@
                 <div class="programs__footer">
                   <p>Помогайте другим и развивайте свои&nbsp;лидерские качества.</p>
                   <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
                 </div>
@@ -369,7 +369,7 @@
                 <div class="programs__footer">
                   <p>Получите образование и измените своё&nbsp;будущее.</p>
                   <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
                 </div>
@@ -397,7 +397,7 @@
                 <div class="programs__footer">
                   <p>Получите незаменимый опыт работы&nbsp;в крупнейших мировых компаниях.</p>
                   <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
                 </div>
@@ -1093,7 +1093,7 @@
 
     </section>
 
-    <form class="form" data-test="form">
+    <div class="form" data-test="form">
       <div class="form__container container">
         <div class="form__wrapper">
           <div class="form__background">
@@ -1110,58 +1110,58 @@
               <img src="img/city.png" srcset="img/city@2x.png 2x" width="1240" height="803" alt="Карта">
             </picture>
           </div>
-          <div class="form__fieldset">
-            <legend class="form__legend">Напишите нам</legend>
-            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-            <div class="form__field-block">
-              <div class="form__field-group">
-                <label for="name">Имя</label>
-                <input type="text" id="name" name="the-name" required>
-              </div>
-              <div class="form__field-group">
-                <label for="telephone">Телефон</label>
-                <input type="tel" id="telephone" name="telephone" required>
-              </div>
-              <div class="form__field-group">
-                <label for="message">Ваше сообщение</label>
-                <textarea class="form__placeholder" name="message" id="message" cols="30" rows="10" required></textarea>
-              </div>
-              <div class="form__field-group">
-                <label for="city">Выберите города
-                  <!-- <input type="text" id="city" name="the-city" required> -->
-                  <select class="select-control" aria-label="Сортировка">
-                    <option value="piter"></option>
-                    <option value="piter">Санкт-Петербург</option>
+          <div class="form__fieldset" data-form-validate>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <legend class="form__legend">Напишите нам</legend>
+              <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+              <div class="form__field-block">
+                <div class="form__field-group" data-on-input-validate data-required data-validate-type="text">
+                  <label for="name">Имя</label>
+                  <input type="text" id="name" name="the-name" required>
+                </div>
+                <div class="form__field-group" data-on-input-validate data-required data-validate-type="phone">
+                  <label for="telephone">Телефон</label>
+                  <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <div class="form__field-group" data-on-input-validate data-required data-validate-type="text">
+                  <label for="message">Ваше сообщение</label>
+                  <textarea class="form__placeholder" name="message" id="message" cols="30" rows="10"
+                    required></textarea>
+                </div>
+                <div class="form__field-group" data-on-input-validate data-required data-validate-type="select">
+                  <label for="city">Выберите города</label>
+                  <select class="select-control" name="city" id="city">
+                    <option selected></option>
+                    <option value="moscow">Москва</option>
                     <option value="piter">Санкт-Петербург</option>
                   </select>
-                </label>
+                </div>
+                <div class="form__field-group form__field-group--checkbox" data-on-input-validate data-required
+                  data-validate-type="checkbox">
+                  <label>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="peru" required>
+                    <span class="form__checkbox-mark">
+                      <svg width="10" height="8" viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg"
+                        stroke="currentColor">
+                        <use href="__spritemap#sprite-check"></use>
+                      </svg>
+                    </span>
+                    <span class="form__checkbox-label">Я согласен на обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="form__button button" type="submit">отправить
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <div class="form__field-group">
-                <label class="form__checkbox">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="peru" checked>
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-label">Я согласен на обработку моих персональных данных</span>
-                </label>
-                <!-- <div class="form__span">
-                  <span class="form__daten">Я согласен на обработку моих персональных данных
-                    <svg width="10" height="8" viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg"
-                      stroke="currentColor">
-                      <use href="__spritemap#sprite-check"></use>
-                    </svg>
-                  </span>
-                </div> -->
-              </div>
-              <button class="form__button button" type="submit">отправить
-                <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                  <use href="__spritemap#sprite-arrow"></use>
-                </svg>
-              </button>
-            </div>
+            </form>
           </div>
 
         </div>
       </div>
-    </form>
+    </div>
 
   </main>
 
@@ -1213,24 +1213,24 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg width="16" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <use href="__spritemap#sprite-vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <a class="social__link" href="#" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <use href="__spritemap#sprite-ok"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Однокласниках.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <a class="social__link" href="#" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <use href="__spritemap#sprite-reddit"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Редите.</span>

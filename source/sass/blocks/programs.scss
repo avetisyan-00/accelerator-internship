@@ -48,29 +48,30 @@
 // }
 
 .programs__header {
+  position: relative;
   width: 194px;
   background-color: #ffffff;
   border-radius: 12px 12px 0 0;
+  padding: 13px 18px 2px;
 
   h3 {
     font-size: 24px;
     font-weight: 400;
     line-height: 26px;
     color: #316dc2;
-    padding: 18px 18px 6px 18px;
     margin: 0;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
-    right: 106px;
-    width: 26px;
-    height: 26px;
+    bottom: 0;
+    right: -13px;
+    width: 18px;
+    height: 18px;
     mask-image: url("../../img/sprite/angle.svg");
     background-color: #ffffff;
-    transform: rotate(-85deg);
+    transform: rotate(-90deg);
   }
 }
 
@@ -81,13 +82,14 @@
   background-color: #ffffff;
   border-radius: 0 12px 12px;
   margin-top: -1px;
+  padding: 12px 18px 15px;
+  min-height: 79px;
 
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     color: #484848;
-    padding: 12px 18px 15px;
     margin: 0;
   }
 }
@@ -106,15 +108,16 @@
     width: 30px;
     height: 30px;
     background-color: #316dc2;
-    top: -17px;
-    right: 18px;
+    top: 0;
+    right: 0;
   }
 
   svg {
     position: absolute;
-    top: -7px;
-    right: 27px;
+    top: 10px;
+    right: 10px;
     z-index: 2;
+    color: #ffffff;
   }
 }
 
