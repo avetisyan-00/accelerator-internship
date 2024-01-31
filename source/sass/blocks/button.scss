@@ -86,3 +86,21 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .button {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+
+    &::after {
+      width: 34px;
+      height: 34px;
+    }
+
+    svg {
+      top: 15px;
+      right: 15px;
+    }
+  }
+}

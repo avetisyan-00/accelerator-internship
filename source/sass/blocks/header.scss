@@ -195,6 +195,11 @@
   border-radius: 2px;
 }
 
+.header__nav-toggle span::before,
+.header__nav-toggle span::after {
+  content: "";
+}
+
 .header__nav-toggle span::before {
   top: -5px;
 }

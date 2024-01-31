@@ -51,7 +51,7 @@ const initSliderPrograms = () => {
         },
 
         768: {
-          slidesPerView: 2,
+          slidesPerView: 'auto',
           spaceBetween: 30,
         },
 

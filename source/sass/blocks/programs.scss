@@ -1,5 +1,5 @@
 .programs {
-  padding-top: 120px;
+  padding-top: 122px;
   padding-bottom: 120px;
 }
 
@@ -71,6 +71,7 @@
   border-radius: 50%;
   position: relative;
   flex-shrink: 0;
+  margin-left: 16px;
 
   &::after {
     content: "";
@@ -129,7 +130,6 @@
 }
 
 .programs .programs__blocks {
-  width: 392px;
   padding: 0 51px 20px 20px;
   min-height: 420px;
   background: rgba(49, 109, 194, 0.2);
@@ -204,4 +204,67 @@
 .programs__scrollbar-drag {
   height: 2px;
   background: #316dc2;
+}
+
+@media (max-width: $tablet-width) {
+  .programs .programs__blocks {
+    width: 324px;
+  }
+
+  .programs .programs__container {
+    padding-right: 0;
+  }
+
+  .programs__wrapper {
+    padding-right: 45px;
+  }
+
+  .programs__navigation-wrapper {
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .programs .programs__container {
+    padding-right: 15px;
+  }
+
+  .programs__scrollbar {
+    display: none;
+  }
+
+  .programs__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .programs__navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .programs__navigation-wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .programs .programs__swiper {
+    padding-bottom: 72px;
+  }
+
+  .programs .programs__all {
+    position: absolute;
+    padding: 14px 67px 14px 30px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .programs__slider {
+    margin-bottom: 0;
+  }
+
+  .programs .programs__blocks {
+    padding: 18px 10px;
+  }
 }

@@ -1,6 +1,6 @@
 .grant {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 127px;
+  padding-bottom: 98px;
   background-color: #316dc2;
 }
 
@@ -16,7 +16,7 @@
   line-height: 50px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .grant__block {
@@ -29,7 +29,7 @@
     line-height: 26px;
     color: #f0efe9;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 }
 
@@ -43,7 +43,7 @@
   line-height: 36px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 57px;
   width: 373px;
 }
 
@@ -59,6 +59,8 @@
   margin: 0;
   margin-bottom: 23px;
   width: 478px;
+  padding-top: 23px;
+  padding-bottom: 21px;
 
   &:last-child(4) {
     margin-bottom: 0;
@@ -67,6 +69,7 @@
 
 .grant__miniblock {
   display: block;
+  margin-left: 20px;
 
   span {
     font-size: 22px;
@@ -76,10 +79,10 @@
     text-transform: uppercase;
     color: #ffffff;
     position: absolute;
-    top: -18px;
-    left: -12px;
+    top: -17px;
+    left: -16px;
     background-color: #316dc2;
-    padding: 10px;
+    padding: 11px;
   }
 }
 
