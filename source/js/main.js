@@ -23,11 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.stickyHeader = stickyHeader;
   stickyHeader.init();
 
-  // const burger = new Burger();
-  // window.burger = burger;
-  // burger.init();
-
-
   // Modules
   // ---------------------------------
 

@@ -116,8 +116,6 @@
   border: 1px solid #316dc2;
   position: absolute;
   background-color: #316dc2;
-  // top: 50%;
-  // transform: translateY(-50%);
   top: 30px;
   right: 40px;
 
@@ -146,12 +144,6 @@
     margin: 0;
   }
 }
-
-// .accordion__block {
-//   position: relative;
-//   border: none;
-//   display: block;
-// }
 
 @media (max-width: $tablet-width) {
   .accordion h3 {

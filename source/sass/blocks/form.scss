@@ -182,25 +182,11 @@
   position: relative;
   margin-top: 20px;
 
-  &:hover,
-  &:focus-visible {
-    background-color: #ffffff;
-    color: #103aae;
-  }
-
-  &:active {
-    background-color: #ffffff;
-    color: #102654;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-  }
-
   svg {
     position: absolute;
     top: 27px;
-    right: 20px;
+    right: 21px;
+    color: #316dc2;
   }
 
   &::after {
@@ -210,6 +196,52 @@
     top: 9px;
     border-radius: 50%;
     background-color: #ffffff;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ffffff;
+    color: #316dc2;
+
+    svg {
+      color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      background-color: #316dc2;
+    }
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
+
+    svg {
+      color: #ffffff;
+      opacity: 0.7;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      background-color: #316dc2;
+    }
+  }
+
+  &:disabled {
+    border-color: #a9afb7;
+    color: #a9afb7;
+    background-color: transparent;
+
+    svg {
+      color: #ffffff;
+      opacity: 0.6;
+      transform: none;
+    }
+
+    &::after {
+      background-color: #a9afb7;
+    }
   }
 }
 

@@ -60,37 +60,6 @@
   margin: 0;
 }
 
-
-// .slider__button {
-//   font-family: $ff-manrope;
-//   font-size: 14px;
-//   font-weight: 500;
-//   line-height: 14px;
-//   letter-spacing: 0.28px;
-//   color: #316dc2;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   border-radius: 30px;
-//   border: 1px solid #316dc2;
-//   padding-top: 22px;
-//   padding-bottom: 22px;
-//   padding-left: 30px;
-//   padding-right: 30px;
-//   width: 196px;
-
-//   svg {
-//     position: absolute;
-//     padding: 18px;
-//     width: 46px;
-//     height: 46px;
-//     color: #ffffff;
-//     border-radius: 44px;
-//     background: #316dc2;
-//     right: 4px;
-//     top: 4px;
-//   }
-// }
-
 .slider__background {
   position: absolute;
   top: 0;
@@ -216,7 +185,6 @@
 
   .slider__bullets {
     top: 397px;
-    // left: calc(50% - 498px);
   }
 }
 
