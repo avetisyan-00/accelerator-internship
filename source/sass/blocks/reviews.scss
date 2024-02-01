@@ -14,8 +14,7 @@
 }
 
 .reviews .reviews__general {
-  width: 604px;
-  height: 456px;
+  height: auto;
   padding: 50px;
   border-radius: 16px;
   border: 1px solid #316dc2;
@@ -34,7 +33,6 @@
     font-weight: 400;
     line-height: 26px;
     color: #316dc2;
-    width: 504px;
     margin: 0;
     margin-bottom: 25px;
   }
@@ -44,7 +42,6 @@
     font-weight: 400;
     line-height: 26px;
     color: #484848;
-    width: 504px;
     margin: 0;
   }
 }
@@ -81,6 +78,7 @@
   letter-spacing: 0.12px;
   text-transform: uppercase;
   display: block;
+  margin-bottom: 11px;
 }
 
 .reviews__description {
@@ -114,3 +112,110 @@
   background: #316dc2;
 }
 
+@media (max-width: $tablet-width) {
+  .reviews .reviews__container {
+    padding-right: 0;
+  }
+
+  .reviews__slogan {
+    font-size: 34px;
+    line-height: 50px;
+    padding-right: 45px;
+    margin-bottom: 53px;
+  }
+
+  .reviews__navigation-wrapper {
+    padding-right: 45px;
+  }
+
+  .reviews .reviews__general {
+    width: 560px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .reviews__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews .reviews__container {
+    padding-right: 15px;
+  }
+
+  .reviews__slogan {
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .reviews__navigation-wrapper {
+    padding-right: 0;
+    position: static;
+    min-height: none;
+  }
+
+  .reviews__scrollbar {
+    display: none;
+  }
+
+  .reviews__navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .reviews .reviews__general {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h3 {
+      font-size: 14px;
+      line-height: 218px;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .reviews__text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 8px;
+  }
+
+  .reviews__description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .reviews__blocks {
+    display: block;
+    margin-bottom: 25px;
+  }
+}

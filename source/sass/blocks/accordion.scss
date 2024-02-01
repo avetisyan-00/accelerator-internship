@@ -16,7 +16,7 @@
   position: relative;
   border-radius: 16px;
   border: 1px solid #316dc2;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   background-color: transparent;
 
   &:hover,
@@ -116,7 +116,7 @@
   border: 1px solid #316dc2;
   position: absolute;
   background-color: #316dc2;
-  top: 30px;
+  top: 40px;
   right: 40px;
 
   svg {
@@ -141,6 +141,9 @@
   max-width: 660px;
 
   p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
     margin: 0;
   }
 }
@@ -148,33 +151,50 @@
 @media (max-width: $tablet-width) {
   .accordion h3 {
     font-size: 22px;
-    line-height: 22px;
+    line-height: 26px;
+  }
+
+  .accordion__element {
+    padding: 30px;
+  }
+
+  .accordion__button-inner {
+    top: 30px;
+    right: 30px;
   }
 
   .accordion__wrapper {
     max-width: 550px;
     padding-top: 2px;
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
 
 @media (max-width: $mobile-width) {
   .accordion h3 {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
     padding-right: 50px;
     display: block;
   }
 
   .accordion__wrapper {
-    font-size: 16px;
-    line-height: 20px;
     padding-top: 20px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   .accordion__button-inner {
-    height: 30px;
-    width: 30px;
+    top: 20px;
+    right: 15px;
   }
 
   .accordion__button-minus {
@@ -187,6 +207,6 @@
   }
 
   .accordion__element {
-    padding: 22px 0 21px;
+    padding: 19px 15px;
   }
 }

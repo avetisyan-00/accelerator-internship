@@ -1,8 +1,8 @@
 import Swiper from 'swiper/bundle';
 const sliderSlider = document.querySelector('.slider');
 const sliderPrograms = document.querySelector('.programs__swiper');
-const sliderReviews = document.querySelector('.reviews__container');
-const sliderNews = document.querySelector('.news__container');
+const sliderReviews = document.querySelector('.reviews__swiper');
+const sliderNews = document.querySelector('.news__swiper');
 
 const initSliderSlider = () => {
   if (sliderSlider) {
@@ -85,7 +85,7 @@ const initSliderReviews = () => {
         },
 
         768: {
-          slidesPerView: 2,
+          slidesPerView: 'auto',
           spaceBetween: 30,
         },
 
@@ -118,16 +118,25 @@ const initSliderNews = () => {
 
       breakpoints: {
         1440: {
+          grid: {
+            rows: 1,
+          },
           slidesPerView: 'auto',
           spaceBetween: 32,
         },
 
         768: {
+          grid: {
+            rows: 2,
+          },
           slidesPerView: 2,
           spaceBetween: 30,
         },
 
         320: {
+          grid: {
+            rows: 2,
+          },
           slidesPerView: 1,
           spaceBetween: 20,
         },

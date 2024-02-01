@@ -140,6 +140,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .slider__container {
+    min-height: 1024px;
+  }
+
   .slider__header {
     width: 659px;
 
@@ -175,6 +179,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .slider__container {
+    min-height: 568px;
+  }
+
   .slider__header {
     width: 290px;
 

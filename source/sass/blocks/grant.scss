@@ -1,6 +1,7 @@
 .grant {
-  padding-top: 127px;
+  padding-top: 125px;
   padding-bottom: 98px;
+  margin-top: 117px;
   background-color: #316dc2;
 }
 
@@ -91,6 +92,8 @@
 
   img {
     width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
   }
 }
 
@@ -101,7 +104,7 @@
   }
 
   .grant__general {
-    width: 678px;
+    width: 100%;
     display: block;
   }
 
@@ -112,6 +115,7 @@
   }
 
   .grant__block {
+    width: 100%;
     margin-bottom: 50px;
 
     p {
@@ -122,7 +126,7 @@
   }
 
   .grant__content {
-    width: 678px;
+    width: 100%;
   }
 
   .grant__title {
@@ -134,8 +138,8 @@
 
   .grant__description {
     line-height: 20px;
-    margin-bottom: 25px;
-    width: 305px;
+    margin-bottom: 0;
+    width: auto;
 
     &:last-child(4) {
       margin-bottom: 0;
@@ -143,18 +147,14 @@
   }
 
   .grant__miniblock {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 28px;
     margin-left: 20px;
   }
 
   .grant__picture {
-    width: 678px;
-
-    img {
-      width: 100%;
-    }
+    width: 100%;
   }
 }
 
@@ -176,16 +176,16 @@
     p {
       font-size: 14px;
       line-height: 20px;
-      width: 290px;
+      width: 100%;
     }
   }
 
   .grant__general {
-    width: 290px;
+    width: 100%;
   }
 
   .grant__picture {
-    width: 290px;
+    width: 100%;
 
     img {
       width: 100%;
@@ -195,7 +195,7 @@
 
   .grant__miniblock {
     display: block;
-    width: 290px;
+    width: auto;
 
     span {
       font-size: 18px;
@@ -207,14 +207,13 @@
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 30px;
-    width: 210px;
+    width: 100%;
   }
 
   .grant__description {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 15px;
-    width: 275px;
     padding: 24px 25px;
   }
 }
