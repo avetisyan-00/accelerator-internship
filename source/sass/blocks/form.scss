@@ -1,6 +1,7 @@
 .form {
   // padding-top: 120px;
   // padding-bottom: 120px;
+  margin-top: 120px;
 }
 
 .form__container {
@@ -17,7 +18,8 @@
   line-height: 36px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 27px;
+  margin-top: 11px;
 }
 
 .form__text {
@@ -27,11 +29,11 @@
   opacity: 0.9;
   color: #f0efe9;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .form__field-group {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   &:last-child {
     margin-bottom: 0;
@@ -54,14 +56,15 @@
   border-radius: 8px;
   appearance: none;
   position: relative;
-  margin-top: 12px;
+  margin-top: 7px;
   outline: none;
   background-image: url("../../img/sprite/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 18px top 19px;
+  background-position: right 19px top 16px;
   padding-left: 25px;
   padding-right: 40px;
   color: #f0efe9;
+  margin-bottom: 5px;
 
   &:hover {
     border-color: #ffffff;
@@ -107,7 +110,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-  margin-top: 12px;
+  margin-top: 6px;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -134,12 +137,12 @@
 
 .form__field-group textarea {
   width: 350px;
-  height: 120px;
+  height: 97px;
   background-color: transparent;
   color: #f0efe9;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-  margin-top: 12px;
+  margin-top: 6px;
   outline: none;
   padding: 20px 25px;
 
@@ -167,7 +170,6 @@
 .form__button {
   font-family: $ff-manrope;
   width: 100%;
-  padding: 25px;
   align-items: center;
   font-size: 14px;
   font-weight: 500;
@@ -180,11 +182,15 @@
   border-radius: 30px;
   border: 1px solid #ffffff;
   position: relative;
-  margin-top: 20px;
+  margin-top: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 21px;
+  padding-right: 71px;
 
   svg {
     position: absolute;
-    top: 27px;
+    top: 22px;
     right: 21px;
     color: #316dc2;
   }
@@ -192,8 +198,8 @@
   &::after {
     content: "";
     position: absolute;
-    right: 4px;
-    top: 9px;
+    right: 3px;
+    top: 3px;
     border-radius: 50%;
     background-color: #ffffff;
   }
@@ -253,6 +259,7 @@
   position: relative;
   z-index: 5;
   min-height: 100%;
+  padding-bottom: 39px;
 }
 
 .form__background {

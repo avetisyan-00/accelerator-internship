@@ -1,5 +1,6 @@
 .footer {
-  padding-bottom: 60px;
+  padding-bottom: 46px;
+  margin-top: 106px;
 }
 
 .footer__logo {
@@ -8,6 +9,7 @@
   height: 52px;
   border-radius: 50%;
   background-color: #ffffff;
+  top: 3px;
 
   svg {
     position: absolute;
@@ -21,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .footer__header {
@@ -33,6 +35,9 @@
   display: flex;
   list-style: none;
   gap: 30px;
+  padding-left: 53px;
+  margin: 0;
+  margin-top: 7px;
 }
 
 .footer__content {
