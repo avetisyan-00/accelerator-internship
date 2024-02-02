@@ -4,7 +4,7 @@
   line-height: 34px;
   position: relative;
   color: #316dc2;
-  min-height: 40px;
+  min-height: 54px;
   display: flex;
   align-items: center;
   margin: 0;
@@ -13,10 +13,12 @@
 
 .accordion__element {
   padding: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
   border-radius: 16px;
   border: 1px solid #316dc2;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   background-color: transparent;
 
   &:hover,
@@ -137,9 +139,10 @@
   font-size: 16px;
   line-height: 26px;
   color: #f0efe9;
-  padding-top: 30px;
+  padding-top: 6px;
+  padding-bottom: 17px;
   font-weight: 400;
-  max-width: 660px;
+  max-width: 690px;
 
   p {
     font-size: 16px;
@@ -153,6 +156,7 @@
   .accordion h3 {
     font-size: 22px;
     line-height: 26px;
+    min-height: 39px;
   }
 
   .accordion__element {
@@ -165,8 +169,9 @@
   }
 
   .accordion__wrapper {
-    max-width: 550px;
-    padding-top: 2px;
+    max-width: 580px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 
     p {
       font-size: 16px;

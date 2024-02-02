@@ -71,3 +71,27 @@
     border-bottom: 0;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    margin-top: 100px;
+    padding-top: 124px;
+    padding-bottom: 97px;
+  }
+
+  .contacts__slogan {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__wrapper {
+    display: block;
+    padding-bottom: 16px;
+    margin-bottom: 29px;
+  }
+
+  .contacts__list {
+    width: 678px;
+  }
+}

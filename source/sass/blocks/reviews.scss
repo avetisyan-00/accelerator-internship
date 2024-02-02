@@ -1,5 +1,5 @@
 .reviews {
-  margin-top: 95px;
+  margin-top: 119px;
   padding-top: 4px;
 }
 
@@ -20,7 +20,10 @@
   border-radius: 16px;
   border: 1px solid #316dc2;
   padding-bottom: 42px;
+}
 
+
+.reviews__general {
   h3 {
     font-size: 18px;
     font-weight: 400;
@@ -118,7 +121,7 @@
 
 @media (max-width: $tablet-width) {
   .reviews {
-    margin-top: 91px;
+    margin-top: 61px;
     padding-top: 0;
   }
 
@@ -136,11 +139,15 @@
 
   .reviews__navigation-wrapper {
     padding-right: 45px;
+    margin-top: 38px;
   }
 
   .reviews .reviews__general {
     width: 560px;
+    padding-bottom: 46px;
+  }
 
+  .reviews__general {
     h3 {
       font-size: 20px;
       line-height: 24px;
@@ -197,10 +204,12 @@
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
+  }
 
+  .reviews__general {
     h3 {
       font-size: 14px;
-      line-height: 218px;
+      line-height: 18px;
     }
 
     h4 {
