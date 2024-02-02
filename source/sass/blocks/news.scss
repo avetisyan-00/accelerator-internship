@@ -1,6 +1,5 @@
 .news {
   margin-top: 123px;
-  // padding-bottom: 120px;
   text-align: center;
   padding-top: 3px;
 }
@@ -363,14 +362,36 @@
 }
 
 @media (max-width: $tablet-width) {
+  .news {
+    margin-top: 100px;
+    padding-top: 0;
+  }
+
   .news .news__container {
     padding-left: 45px;
     padding-right: 45px;
   }
 
+  .news__general {
+    margin-top: 28px;
+  }
+
+  .news__content {
+    width: 670px;
+    margin-bottom: 32px;
+  }
+
+  .news__link {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
   .news__slogan {
     font-size: 34px;
     line-height: 50px;
+    margin-bottom: 30px;
   }
 
   .news .news__block {
@@ -394,7 +415,17 @@
     }
   }
 
+  .news__header {
+    max-width: 207px;
+  }
+
+  .news__span {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
   .news__footer {
+    padding-bottom: 11px;
     p {
       font-size: 14px;
       line-height: 20px;

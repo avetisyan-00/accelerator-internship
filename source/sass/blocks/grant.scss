@@ -94,13 +94,15 @@
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
+    height: 100%;
   }
 }
 
 @media (max-width: $tablet-width) {
   .grant {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 99px;
+    margin-top: 99px;
   }
 
   .grant__general {
@@ -111,16 +113,16 @@
   .grant__slogan {
     font-size: 34px;
     line-height: 50px;
-    margin-bottom: 44px;
+    margin-bottom: 27px;
   }
 
   .grant__block {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
 
     p {
       line-height: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       width: 498px;
     }
   }
@@ -132,7 +134,7 @@
   .grant__title {
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
     width: 626px;
   }
 
@@ -140,16 +142,24 @@
     line-height: 20px;
     margin-bottom: 0;
     width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 24px;
+    padding-right: 13px;
 
     &:last-child(4) {
       margin-bottom: 0;
     }
   }
 
+  .grant__description--document {
+    padding-bottom: 25px;
+  }
+
   .grant__miniblock {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 28px;
+    gap: 25px 48px;
     margin-left: 20px;
   }
 

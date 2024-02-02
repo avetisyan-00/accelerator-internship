@@ -117,6 +117,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .reviews {
+    margin-top: 91px;
+    padding-top: 0;
+  }
+
   .reviews .reviews__container {
     padding-right: 0;
   }
@@ -125,7 +130,8 @@
     font-size: 34px;
     line-height: 50px;
     padding-right: 45px;
-    margin-bottom: 53px;
+    margin-bottom: 41px;
+    margin-left: 0;
   }
 
   .reviews__navigation-wrapper {
@@ -143,6 +149,7 @@
     h4 {
       font-size: 20px;
       line-height: 24px;
+      margin-bottom: 16px;
     }
 
     p {
