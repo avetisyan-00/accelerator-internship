@@ -279,6 +279,7 @@
 .form__field-group--checkbox label {
   position: relative;
   padding-left: 30px;
+  display: inline-block;
 }
 
 .form__checkbox-mark {
@@ -301,7 +302,7 @@
   }
 }
 
-.form__checkbox-input:checked {
+.form input[type="checkbox"]:checked {
   + .form__checkbox-mark {
     svg {
       display: block;
@@ -311,28 +312,28 @@
 
 @media (max-width: $tablet-width) {
   .form {
-    margin-top: 102px;
+    margin-top: 101px;
     padding-bottom: 3px;
   }
 
   .form__legend {
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .form__fieldset {
     padding-left: 45px;
     padding-top: 48px;
-    padding-bottom: 57px;
+    padding-bottom: 58px;
     padding-right: 45px;
     width: 442px;
   }
 
   .form__text {
-    margin-bottom: 19px;
-    width: 350px;
+    margin-bottom: 27px;
     padding-bottom: 2px;
+    line-height: 20px;
   }
 
   .form__field-group {
@@ -341,16 +342,16 @@
 
   .form__field-group input {
     margin-top: 5px;
-    width: 352px;
+    width: 100%;
   }
 
   .form__field-group select {
-    margin-top: 3px;
-    width: 352px;
+    margin-top: 5px;
+    width: 100%;
   }
 
   .form__field-group textarea {
-    width: 352px;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: -3px;
   }
@@ -358,12 +359,13 @@
   .form__button {
     padding-left: 32px;
     padding-right: 82px;
+    padding-top: 18px;
     padding-bottom: 18px;
-    width: 352px;
+    width: 100%;
   }
 
-  .form__field-group--checkbox {
-    width: 354px;
+  .form__checkbox-mark {
+    top: 2px;
   }
 }
 
@@ -374,29 +376,35 @@
   }
 
   .form__fieldset {
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .form__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .form__field-group input {
-    width: 260px;
   }
 
   .form__field-group select {
-    width: 260px;
   }
 
   .form__field-group textarea {
-    width: 260px;
-  }
-
-  .form__button {
-    width: 260px;
   }
 
   .form__field-group--checkbox {
-    width: 260px;
+  }
+
+  .form__checkbox-mark {
+    top: 14px;
+  }
+
+  .form__button {
+    font-size: 12px;
+    line-height: 12px;
   }
 
   // .form__text {

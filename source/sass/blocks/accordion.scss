@@ -156,11 +156,11 @@
   .accordion h3 {
     font-size: 22px;
     line-height: 26px;
-    min-height: 39px;
+    min-height: 50px;
   }
 
   .accordion__element {
-    padding: 30px;
+    padding: 24px 30px;
   }
 
   .accordion__button-inner {
@@ -170,8 +170,8 @@
 
   .accordion__wrapper {
     max-width: 580px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 9px;
 
     p {
       font-size: 16px;

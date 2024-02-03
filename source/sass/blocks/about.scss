@@ -294,6 +294,20 @@
   }
 }
 
+@media (min-width: $mobile-width + 1) {
+  .about__content--participant {
+    br {
+      display: none;
+    }
+  }
+
+  .about__content--country {
+    br {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: $mobile-width) {
   .about {
     margin-top: 62px;
@@ -320,7 +334,6 @@
     padding-top: 42px;
     padding-left: 30px;
     padding-right: 20px;
-    // padding-bottom: 30px;
     gap: 22px;
   }
 
@@ -366,21 +379,8 @@
     p {
       font-size: 14px;
       line-height: 20px;
-      // margin-bottom: 40px;
     }
   }
-
-  // .about__content--programs {
-  //   padding-right: 38px;
-
-  //   h4 {
-  //     margin-bottom: 10px;
-  //   }
-
-  //   p {
-  //     margin-top: -3px;
-  //   }
-  // }
 
   .about__content--participant {
 
@@ -394,7 +394,6 @@
   }
 
   .about__content--from {
-    // padding-bottom: 25px;
 
     h4 {
       margin-right: 35px;
@@ -413,7 +412,7 @@
     }
 
     p {
-      margin-top: -5px;
+      margin-top: -3px;
     }
   }
 }

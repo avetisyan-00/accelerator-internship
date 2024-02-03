@@ -418,19 +418,33 @@
 
   .news__header {
     max-width: 207px;
+    padding-top: 5px;
+    padding-bottom: 2px;
   }
 
   .news__span {
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
+
+    &::after {
+      bottom: -2px;
+      right: -11px;
+    }
   }
 
   .news__footer {
     padding-bottom: 11px;
+    padding-top: 8px;
+
     p {
+      margin-right: 16px;
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  .news__pagination {
+    margin-right: 53px;
   }
 }
 
