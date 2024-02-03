@@ -93,5 +93,40 @@
 }
 
 @media (max-width: $tablet-width) {
+  .footer {
+    margin-top: 95px;
+    padding-bottom: 16px;
+  }
 
+  .footer__logo svg {
+    top: 11px;
+  }
+
+  .footer__content {
+    display: block;
+  }
+
+  .footer__wrapper {
+    display: block;
+  }
+
+  .footer__list {
+    padding-left: 0;
+    gap: 15px;
+    margin-left: 99px;
+  }
+
+  .footer__list-link {
+    line-height: 20px;
+  }
+
+  .footer__description {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .footer__privacy {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }

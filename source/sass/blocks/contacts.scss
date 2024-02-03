@@ -95,3 +95,9 @@
     width: 678px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .contacts__list {
+    display: block;
+  }
+}

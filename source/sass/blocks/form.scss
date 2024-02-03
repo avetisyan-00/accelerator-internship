@@ -366,3 +366,40 @@
     width: 354px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .form__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__fieldset {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__field-group input {
+    width: 260px;
+  }
+
+  .form__field-group select {
+    width: 260px;
+  }
+
+  .form__field-group textarea {
+    width: 260px;
+  }
+
+  .form__button {
+    width: 260px;
+  }
+
+  .form__field-group--checkbox {
+    width: 260px;
+  }
+
+  // .form__text {
+  //   width: 260px;
+  // }
+}
