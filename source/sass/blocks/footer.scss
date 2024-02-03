@@ -99,12 +99,12 @@
 
 @media (max-width: $tablet-width) {
   .footer {
-    margin-top: 93px;
-    padding-bottom: 30px;
+    margin-top: 97px;
+    padding-bottom: 34px;
   }
 
   .footer__logo svg {
-    top: 13px;
+    top: 9px;
   }
 
   .footer__content {
@@ -126,6 +126,7 @@
     padding-left: 0;
     gap: 15px;
     margin-left: 99px;
+    margin-top: 0;
   }
 
   .footer__list-link {
