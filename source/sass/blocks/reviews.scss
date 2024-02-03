@@ -123,6 +123,7 @@
   .reviews {
     margin-top: 100px;
     padding-top: 0;
+    padding-bottom: 2px;
   }
 
   .reviews .reviews__container {
@@ -144,8 +145,19 @@
 
   .reviews .reviews__general {
     width: 560px;
+    padding-top: 48px;
     padding-bottom: 46px;
-    padding-right: 48px;
+    padding-right: 46px;
+    padding-left: 49px;
+  }
+
+  .reviews__header {
+    margin-top: 1px;
+    margin-right: 2px;
+  }
+
+  .reviews__span {
+    margin-right: 26px;
   }
 
   .reviews__general {

@@ -324,8 +324,8 @@
 
   .form__fieldset {
     padding-left: 45px;
-    padding-top: 48px;
-    padding-bottom: 58px;
+    padding-top: 49px;
+    padding-bottom: 56px;
     padding-right: 45px;
     width: 442px;
   }
@@ -353,15 +353,17 @@
   .form__field-group textarea {
     width: 100%;
     margin-top: 5px;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
+    height: 98px;
   }
 
   .form__button {
     padding-left: 32px;
     padding-right: 82px;
     padding-top: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
     width: 100%;
+    margin-top: 24px;
   }
 
   .form__checkbox-mark {
