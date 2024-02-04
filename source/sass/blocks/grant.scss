@@ -170,23 +170,25 @@
 
 @media (max-width: $mobile-width) {
   .grant {
-    padding-top: 67px;
-    padding-bottom: 67px;
+    padding-top: 69px;
+    padding-bottom: 52px;
+    margin-top: 62px;
   }
 
   .grant__slogan {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
   }
 
   .grant__block {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 
     p {
       font-size: 14px;
       line-height: 20px;
       width: 100%;
+      margin-bottom: 25px;
     }
   }
 
@@ -206,17 +208,20 @@
   .grant__miniblock {
     display: block;
     width: auto;
+    margin-left: 16px;
 
     span {
       font-size: 18px;
       line-height: 18px;
+      top: -11px;
+      left: -16px;
     }
   }
 
   .grant__title {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     width: 100%;
   }
 
@@ -224,6 +229,9 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 15px;
-    padding: 24px 25px;
+    // padding: 24px 25px;
+    padding-top: 18px;
+    padding-left: 23px;
+    padding-bottom: 18px;
   }
 }

@@ -250,6 +250,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .programs {
+    padding-top: 3px;
+  }
+
   .programs .programs__container {
     padding-right: 15px;
   }
@@ -265,12 +269,13 @@
   .programs__slogan {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: -9px;
   }
 
   .programs__navigation {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -2px;
   }
 
   .programs__navigation-wrapper {
@@ -294,6 +299,28 @@
   }
 
   .programs .programs__blocks {
+    min-height: 396px;
     padding: 18px 10px;
+    padding-bottom: 16px;
+  }
+
+  .programs__header h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .programs__header {
+    padding-top: 15px;
+    width: 146px;
+  }
+
+  .programs__footer p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .programs__footer {
+    padding-bottom: 7px;
+    padding-top: 14px;
   }
 }
