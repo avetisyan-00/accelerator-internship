@@ -222,10 +222,19 @@
   }
 
   .accordion__element {
-    // padding: 19px 15px;
     padding-top: 21px;
     padding-bottom: 7px;
-    padding-left: 15px;
+    padding-left: 14px;
     padding-right: 15px;
+  }
+
+  .accordion__element--universal {
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+
+  .accordion__element--last {
+    padding-top: 19px;
+    padding-bottom: 18px;
   }
 }

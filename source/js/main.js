@@ -1,6 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from 'swiper/bundle';
-// import {Navigation, Pagination} from "swiper/modules";
 import {Form} from './vendor/form-validate/form';
 import {initSliderPrograms, initSliderSlider, initSliderReviews, initSliderNews} from './modules/slide-slider';
 import {initAccordions} from './modules/init-accordion';
@@ -10,7 +7,6 @@ import { StickyHeader } from './modules/sticky-header';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
   // ---------------------------------
   initSliderSlider();
   initSliderPrograms();
