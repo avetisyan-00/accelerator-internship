@@ -148,7 +148,18 @@
 
 @media (max-width: $mobile-width) {
   .footer__container {
+    padding-left: 15px;
+    padding-right: 15px;
     flex-direction: column;
+  }
+
+  .footer {
+    margin-top: 62px;
+    padding-bottom: 43px;
+  }
+
+  .footer__logo {
+    margin-top: 0;
   }
 
   .footer__header {
@@ -159,7 +170,9 @@
   .footer__list {
     margin-left: 0;
     justify-content: center;
-    gap: 20px 30px;
+    gap: 10px 30px;
+    margin-top: 13px;
+    margin-bottom: 11px;
   }
 
   .footer__list-link {
@@ -169,5 +182,9 @@
 
   .footer__content {
     align-items: center;
+  }
+
+  .footer__privacy {
+    margin-bottom: 13px;
   }
 }

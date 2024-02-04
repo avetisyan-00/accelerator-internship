@@ -105,7 +105,42 @@
 }
 
 @media (max-width: $mobile-width) {
+  .contacts {
+    margin-top: 58px;
+    padding-top: 95px;
+    padding-bottom: 63px;
+  }
+
+  .contacts__wrapper {
+    padding-bottom: 9px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 31px;
+  }
+
   .contacts__list {
     display: block;
+  }
+
+  .contacts__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__text {
+    margin-bottom: 8px;
+  }
+
+  .contacts__item {
+    margin-bottom: 14px;
+  }
+
+  .contacts__image img {
+    border-radius: 16px;
+    height: 100%;
   }
 }

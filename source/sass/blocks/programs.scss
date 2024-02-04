@@ -270,6 +270,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: -9px;
+    padding-bottom: 4px;
   }
 
   .programs__navigation {
@@ -310,8 +311,9 @@
   }
 
   .programs__header {
-    padding-top: 15px;
+    padding-top: 17px;
     width: 146px;
+    padding-bottom: 8px;
   }
 
   .programs__footer p {
@@ -321,6 +323,7 @@
 
   .programs__footer {
     padding-bottom: 7px;
-    padding-top: 14px;
+    padding-top: 2px;
+    min-height: 69px;
   }
 }

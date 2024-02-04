@@ -47,3 +47,21 @@
     margin-top: 23px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .social__list {
+    margin-top: 16px;
+    grid-template-columns: repeat(3, 28px);
+    gap: 8px;
+  }
+
+  .social__link {
+    width: 26px;
+    height: 26px;
+
+    svg {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
