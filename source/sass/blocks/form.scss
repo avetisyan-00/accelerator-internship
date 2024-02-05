@@ -302,11 +302,9 @@
   }
 }
 
-.form input[type="checkbox"]:checked {
-  + .form__checkbox-mark {
-    svg {
-      display: block;
-    }
+[type="checkbox"]:checked {
+  + .form__checkbox-mark svg {
+    display: block;
   }
 }
 
@@ -383,6 +381,8 @@
   .form {
     margin-top: 59px;
     padding-bottom: 0;
+    border-radius: 16px;
+    overflow: hidden;
   }
 
   .form__container {
@@ -399,7 +399,7 @@
   .form__text {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .form__fieldset {
@@ -416,7 +416,9 @@
   }
 
   .form__field-group {
-    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
   }
 
   .form__field-group label {
@@ -425,17 +427,18 @@
   }
 
   .form__field-group input {
-    margin-top: 10px;
+    margin-top: 11px;
   }
 
   .form__field-group select {
     margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .form__field-group textarea {
     margin-top: 11px;
     height: 94px;
-    margin-bottom: -3px;
+    margin-bottom: 0;
   }
 
   .form__checkbox-mark {
@@ -445,7 +448,7 @@
   .form__button {
     font-size: 12px;
     line-height: 12px;
-    margin-top: 12px;
+    margin-top: 9px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 44px;

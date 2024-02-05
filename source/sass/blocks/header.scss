@@ -15,7 +15,7 @@
     width: 100%;
   }
 
-  &.is-hidden {
+  &--sticky.is-hidden {
     transform: translateY(-100%);
   }
 }
@@ -25,9 +25,9 @@
 }
 
 .header__block {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 
 .header__logo {
@@ -222,10 +222,10 @@
 
   .header__nav-toggle {
     background-color: #ffffff;
+  }
 
-    span {
-      height: 0;
-    }
+  .header__nav-toggle span {
+    height: 0;
   }
 
   .header__menu {

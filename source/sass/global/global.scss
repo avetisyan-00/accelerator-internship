@@ -5,15 +5,14 @@ body {
   background-color: #f0efe9;
 }
 
-body {
-  &.overlay-opened {
-    overflow: hidden;
+body .overlay-opened {
+  overflow: hidden;
 
-    .overlay {
-      display: block;
-    }
+  .overlay {
+    display: block;
   }
 }
+
 
 .overlay {
   position: fixed;
