@@ -19,13 +19,13 @@
     <div class="header__container container">
       <div class="header__block">
         <a class="header__logo logo" href="index.html">
-          <span class="visually-hidden">Логотип</span>
+          <span class="visually-hidden">Логотип.</span>
           <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
             <use href="__spritemap#sprite-logo"></use>
           </svg>
         </a>
         <div class="header__menu-wrapper">
-          <button class="header__menu" type="button" data-burger>
+          <button class="header__menu" type="button" data-burger="burger">
             <span class="header__toggle">Меню</span>
             <span class="header__nav-toggle">
               <span></span>
@@ -46,16 +46,16 @@
                     </button>
                     <ul class="header__list-mini" data-accordion="content">
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Стажировки</a>
+                        <a class="header__link-mini" href="#">Стажировки</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Волонтёрство</a>
+                        <a class="header__link-mini" href="#">Волонтёрство</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Учёба</a>
+                        <a class="header__link-mini" href="#">Учёба</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Религия</a>
+                        <a class="header__link-mini" href="#">Религия</a>
                       </li>
                     </ul>
                   </li>
@@ -75,16 +75,16 @@
                     </button>
                     <ul class="header__list-mini" data-accordion="content">
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Стажировки</a>
+                        <a class="header__link-mini" href="#">Стажировки</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Волонтёрство</a>
+                        <a class="header__link-mini" href="#">Волонтёрство</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Учёба</a>
+                        <a class="header__link-mini" href="#">Учёба</a>
                       </li>
                       <li class="header__item-mini">
-                        <a class="header__link-mini">Религия</a>
+                        <a class="header__link-mini" href="#">Религия</a>
                       </li>
                     </ul>
                   </li>
@@ -323,7 +323,7 @@
                 </div>
                 <div class="programs__footer">
                   <p>Получите незаменимый опыт работы&nbsp;в крупнейших мировых компаниях.</p>
-                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="programs__button" aria-label="иконка" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -351,7 +351,7 @@
                 </div>
                 <div class="programs__footer">
                   <p>Помогайте другим и развивайте свои лидерские качества.</p>
-                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="programs__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -379,7 +379,7 @@
                 </div>
                 <div class="programs__footer">
                   <p>Получите образование и измените своё&nbsp;будущее.</p>
-                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="programs__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -407,7 +407,7 @@
                 </div>
                 <div class="programs__footer">
                   <p>Получите незаменимый опыт работы&nbsp;в крупнейших мировых компаниях.</p>
-                  <a class="programs__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="programs__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -418,15 +418,15 @@
           <div class="programs__navigation-wrapper">
             <div class="programs__scrollbar swiper-scrollbar"></div>
             <div class="programs__navigation">
-              <div class="arrows-slider programs__arrows">
-                <button class="arrows-slider__btn arrows-slider__btn--left" id="programs-slider-prev" type="button"
+              <div class="arrows programs__arrows">
+                <button class="arrows-slider " id="programs-slider-prev" type="button"
                   aria-label="назад.">
                   <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
                     <use href="__spritemap#sprite-left"></use>
                   </svg>
                 </button>
-                <button class="arrows-slider__btn arrows-slider__btn--right" id="programs-slider-next" type="button"
+                <button class="arrows-slider " id="programs-slider-next" type="button"
                   aria-label="вперед.">
                   <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
@@ -518,7 +518,7 @@
                   <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как&nbsp;прошла 6-месячная стажировка в
                     ISOFound
                   </p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -547,7 +547,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Какие места посещают наши&nbsp;<br>студенты весной</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -572,7 +572,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Программа помощи детям длительностью 4 месяца</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -597,7 +597,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -626,7 +626,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Саша рассказывает, как попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -655,7 +655,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Какие места посещают наши&nbsp;студенты весной</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -680,7 +680,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Программа помощи детямдлительностью 4 месяца</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -705,7 +705,7 @@
                 </div>
                 <div class="news__footer">
                   <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                  <a class="news__button" href="#"><svg width="10" height="10" viewBox="0 0 10 10"
+                  <a class="news__button" href="#" aria-label="иконка"><svg width="10" height="10" viewBox="0 0 10 10"
                       xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                       <use href="__spritemap#sprite-arrow"></use>
                     </svg></a>
@@ -715,7 +715,7 @@
           </div>
 
           <div class="news__general">
-            <button class="arrows-slider__btn arrows-slider__btn--left news__button-left" id="news-slider-prev"
+            <button class="arrows-slider news__button-left" id="news-slider-prev"
               type="button" aria-label="назад.">
               <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                 <use href="__spritemap#sprite-left"></use>
@@ -723,7 +723,7 @@
             </button>
             <div class="news__pagination">
             </div>
-            <button class="arrows-slider__btn arrows-slider__btn--right news__button-right" id="news-slider-next"
+            <button class="arrows-slider news__button-right" id="news-slider-next"
               type="button" aria-label="вперед.">
               <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                 <use href="__spritemap#sprite-right"></use>
@@ -1004,15 +1004,15 @@
           <div class="reviews__navigation-wrapper">
             <div class="reviews__scrollbar swiper-scrollbar"></div>
             <div class="reviews__navigation">
-              <div class="arrows-slider reviews__arrows">
-                <button class="arrows-slider__btn arrows-slider__btn--left" id="reviews-slider-prev" type="button"
+              <div class="arrows reviews__arrows">
+                <button class="arrows-slider" id="reviews-slider-prev" type="button"
                   aria-label="назад.">
                   <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
                     <use href="__spritemap#sprite-left"></use>
                   </svg>
                 </button>
-                <button class="arrows-slider__btn arrows-slider__btn--right" id="reviews-slider-next" type="button"
+                <button class="arrows-slider" id="reviews-slider-next" type="button"
                   aria-label="вперед.">
                   <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
@@ -1037,12 +1037,12 @@
                 <p class="contacts__description">г. Новосибирск, ул. Щетинкина 68,<br>культурный центр
                 </p>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--contact">
                 <p class="contacts__text">Телефон</p>
                 <a class="contacts__description contacts__description--tel" href="+796387687676">+7 963 876 876 76
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--mini">
                 <p class="contacts__text">Email</p>
                 <a class="contacts__description" href="mailto:Info@stazh.ru">Info@stazh.ru
                 </a>
@@ -1087,7 +1087,7 @@
           </div>
           <div class="form__fieldset" data-form-validate>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <legend class="form__legend">Напишите нам</legend>
+              <h2 class="form__slogan">Напишите нам</h2>
               <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы —&nbsp;<br>мы на них ответим!</p>
               <div class="form__field-block">
                 <div class="form__field-group" data-on-input-validate data-required data-validate-type="text">
@@ -1106,7 +1106,7 @@
                 <div class="form__field-group" data-on-input-validate data-required data-validate-type="select">
                   <label for="city">Выберите город</label>
                   <select class="select-control" name="city" id="city">
-                    <option selected></option>
+                    <option selected>Краснодар</option>
                     <option value="moscow">Москва</option>
                     <option value="piter">Санкт-Петербург</option>
                   </select>
@@ -1187,7 +1187,7 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <use href="__spritemap#sprite-vk"></use>
               </svg>
@@ -1195,7 +1195,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="#" target="_blank" rel="noreferrer noopener">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <use href="__spritemap#sprite-ok"></use>
               </svg>
@@ -1203,7 +1203,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="#" target="_blank" rel="noreferrer noopener">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <use href="__spritemap#sprite-reddit"></use>
               </svg>

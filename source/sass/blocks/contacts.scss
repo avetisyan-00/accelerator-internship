@@ -76,7 +76,7 @@
   .contacts {
     margin-top: 100px;
     padding-top: 124px;
-    padding-bottom: 97px;
+    padding-bottom: 98px;
   }
 
   .contacts__slogan {
@@ -87,12 +87,20 @@
 
   .contacts__wrapper {
     display: block;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
     margin-bottom: 29px;
   }
 
   .contacts__list {
     width: auto;
+  }
+
+  .contacts__item--contact {
+    margin-left: 4px;
+  }
+
+  .contacts__item--mini {
+    margin-left: 1px;
   }
 
   .contacts__text {

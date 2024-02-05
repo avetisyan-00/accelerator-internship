@@ -148,17 +148,25 @@
 
 @media (max-width: $mobile-width) {
   .footer__container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column;
+    min-width: 290px;
   }
 
   .footer {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 62px;
-    padding-bottom: 43px;
+    padding-bottom: 44px;
   }
 
   .footer__logo {
+    svg {
+      top: 11px;
+    }
+
     margin-top: 0;
   }
 
@@ -171,7 +179,7 @@
     margin-left: 0;
     justify-content: center;
     gap: 10px 30px;
-    margin-top: 13px;
+    margin-top: 15px;
     margin-bottom: 11px;
   }
 

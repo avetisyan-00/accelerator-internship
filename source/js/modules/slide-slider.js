@@ -108,7 +108,7 @@ const initSliderNews = () => {
         bulletClass: 'news__pagination-link',
         bulletActiveClass: 'news__pagination-link--current',
         renderBullet: function (index, className) {
-          return '<button class="' + className + '">' + (index + 1) + "</button>";
+          return `<button class="${ className }">${ index + 1 }</button>`;
         },
       },
       navigation: {
@@ -146,4 +146,3 @@ const initSliderNews = () => {
 };
 
 export {initSliderPrograms, initSliderSlider, initSliderReviews, initSliderNews};
-

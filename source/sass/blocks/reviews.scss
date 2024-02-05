@@ -128,10 +128,15 @@
 // }
 
 @media (max-width: $tablet-width) {
+  .reviews__picture {
+    img {
+      vertical-align: bottom;
+    }
+  }
+
   .reviews {
     margin-top: 100px;
     padding-top: 0;
-    padding-bottom: 2px;
   }
 
   .reviews .reviews__container {
@@ -148,7 +153,7 @@
 
   .reviews__navigation-wrapper {
     padding-right: 45px;
-    margin-top: 38px;
+    margin-top: 39px;
   }
 
   .reviews .reviews__general {
@@ -160,7 +165,7 @@
   }
 
   .reviews__header {
-    margin-top: 1px;
+    margin-top: 6px;
     margin-right: 2px;
   }
 
@@ -170,6 +175,7 @@
 
   .reviews__general {
     h3 {
+      margin-top: 0;
       font-size: 20px;
       line-height: 24px;
     }
@@ -183,11 +189,6 @@
     p {
       font-size: 16px;
       line-height: 20px;
-      // padding-right: 3px;
-
-      // &:last-child {
-      //   padding-right: 4px;
-      // }
     }
   }
 
@@ -202,6 +203,7 @@
 
   .reviews__blocks {
     padding-right: 2px;
+    margin-bottom: 25px;
   }
 }
 
@@ -209,15 +211,12 @@
   .reviews {
     margin-top: 61px;
     padding-top: 3px;
-    padding-bottom: 0;
-    height: 490px;
+    padding-bottom: 1px;
   }
 
-
-
-
   .reviews .reviews__container {
-    padding-right: 15px;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 
   .reviews__slogan {
@@ -225,12 +224,14 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 32px;
+    margin-left: 1px;
   }
 
   .reviews__navigation-wrapper {
     padding-right: 0;
     position: static;
-    min-height: none;
+    min-height: 0;
+    margin: 0;
   }
 
   .reviews__scrollbar {
@@ -240,14 +241,14 @@
   .reviews__navigation {
     position: absolute;
     top: -1px;
-    right: -1px;
+    right: 0;
   }
 
   .reviews .reviews__general {
     padding-top: 28px;
     padding-bottom: 24px;
-    padding-left: 14px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 13px;
   }
 
   .reviews__general {
@@ -291,7 +292,7 @@
   }
 
   .reviews__content {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     margin-top: 1px;
   }
 }
